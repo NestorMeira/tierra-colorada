@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.lista-productos{
+  display: flex;
+  flex-direction:row;
+  align-items:stretch;
+  width: 350px;
+  height: 350px;
+  margin: 20px 7px 60px 10px;
+
+  img{
+    width: 340px;
+    height: 340px;
+    border: ridge black 1px ;
+  }
+  p{
+    position:absolute;
+    margin: 345px 2px 1px 105px;
+    font-size: 25px;
+    
+  }
+  button{
+    margin-bottom: 1px;
+    position:absolute;
+    margin: 410px 2px 1px 116px;
+  }
+  span{
+    position:absolute;
+    margin: 380px 2px 1px 125px;
+    font-size: 20px;
+  }
+}
+
+.icono-carrito{
+  display: block;
+  position: absolute;
+  margin: 277px 10px  1px 920px;
+}
+
