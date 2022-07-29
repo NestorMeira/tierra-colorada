@@ -1,13 +1,54 @@
-import ItemProduct from '../ItemProduct/ItemProduct';
+import { useEffect, useState } from 'react';
+import ItemList from '../ItemList/ItemList';
+import products from '../utils/productsMock';
 
 const ItemListContainer = ({section})=>{
+
+
+const [listProducts, setListProducts]= useState([])
+
+
+
+
+const getProducts= new Promise( (resolve,reject) =>{
+    setTimeout( () =>{
+     resolve(products)
+
+    }, 2000)
+   
+})
+    
+
+useEffect( () =>{
+
+    getProducts
+.then( (res) =>{
+    // console.log("productos: ",res)
+    setListProducts(res)
+})
+.catch( (error)=>{
+    console.log("la llamada fallo")
+} )
+.finally( () =>{
+
+})
+
+
+},[])
+
+
+
+
+
+
+
+
+
     return(
         <div className="lista-productos">
             <h2>{section}</h2> 
-        <ItemProduct titulo="remera1" precio={2500} image={'remera1.png'} className="remera1"/>
-        <ItemProduct titulo="remera1" precio={2500} image={'remera3.png'} className="remera3"/>
-        <ItemProduct titulo="remera2" precio={2700} image={'remera2.png'} className="remera2"/>
-           </div>
+       <ItemList dataProducts={listProducts}/>
+        </div>
    
     );
 
