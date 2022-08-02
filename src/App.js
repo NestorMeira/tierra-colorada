@@ -1,6 +1,7 @@
 
 import './App.scss';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
+
 import NavBar from './componentes/NavBar/NavBar';
 import CartWidget from './componentes/CartWidget/CartWidget';
 function App() {
@@ -9,7 +10,8 @@ function App() {
   <CartWidget  />
      <NavBar />
      <div className="lista-productos">
-    <ItemListContainer section="productos nuevos"/>
+   {/* <ItemListContainer section="productos nuevos"/>  */}
+   <ItemDetailContainer />
     </div>
     </div>
   );

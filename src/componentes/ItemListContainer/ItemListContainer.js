@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+º
 import ItemList from '../ItemList/ItemList';
 import products from '../utils/productsMock';
 
