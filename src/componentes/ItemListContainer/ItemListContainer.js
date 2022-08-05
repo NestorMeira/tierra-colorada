@@ -1,6 +1,8 @@
-º
+
 import ItemList from '../ItemList/ItemList';
 import products from '../utils/productsMock';
+import { useEffect, useState } from 'react';
+
 
 const ItemListContainer = ({section})=>{
 
