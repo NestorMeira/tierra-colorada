@@ -21,7 +21,13 @@
 }
 
 .item-detail-info{
-
+    button {
+        background: white;
+        font-size: 20px;
+        padding: 10px;
+        width: 50px;
+        border: 1px solid #CCC;
+        }
     position: absolute;
     margin: -480px 3px 590px 520px;
     span{

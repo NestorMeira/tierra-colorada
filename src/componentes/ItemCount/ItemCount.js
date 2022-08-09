@@ -1,36 +1,39 @@
 import { useState, useEffect } from 'react'
+import './ItemCount.scss'
 
-
-const ItemCount =()=>{
+const ItemCount =({contadorSelected})=>{
 
     const [contador, setContador] = useState(1)
 
-    const addNumber = ()=>{
-        
-        setContador(contador +1)
-            
-        
+    const addContador = ()=>{
+            setContador(contador +1)
     }
 
-    const removeNumber = ()=>{
+    const removeContador = ()=>{
         setContador(contador -1)
     }
 
-    useEffect( ()=>{
-        console.log("Actualizado")
-        
-    },[contador] ) 
+
+    const onAdd =()=>{
+        contadorSelected(contador)
+    }
+
+  
 
 
     
 
     return(
+        <>
         <div className="count-produc">
-                <button className='menos' onClick={removeNumber}>-</button>
-                <p>{contador}</p>
-                <button onClick={addNumber}>+</button>
-                
-            </div>
+                <button className='menos' onClick={removeContador}>-</button>
+              <span>{contador}</span>
+                <button onClick={addContador}>+</button>
+                </div>
+                <div className='agregar'>
+                <button  onClick={onAdd} >AGREGAR AL CARRITO</button>
+                </div>
+                </>
     );
 }
 
