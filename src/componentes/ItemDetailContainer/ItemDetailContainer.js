@@ -1,47 +1,36 @@
-import { useEffect, useState } from 'react';
-import ItemList from '../ItemList/ItemList';
-import products from '../utils/productsMock';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import products2 from '../utils/remerasMock2';
+import { useEffect, useState} from 'react';
+import { useParams } from 'react-router-dom';
 
 
 const ItemDetailContainer = ()=>{
 
-    const [listProducts, setListProducts]= useState([])
+const [productData, setProductData]= useState({})
 
+const {id} = useParams()
 
+useEffect( () => {
+    filterById()
+},[])
 
+const filterById= ()=>{
+  products2.some( (product) => {
+    if(product.id == id){
+      setProductData(product)
+    }
+  })
+}
 
-    const getProducts= new Promise( (resolve,reject) =>{
-        setTimeout( () =>{
-         resolve(products)
-    
-        }, 2000)
-       
-    })
-        
-    
-    useEffect( () =>{
-    
-        getProducts
-    .then( (res) =>{
-        // console.log("productos: ",res)
-        setListProducts(res)
-    })
-    .catch( (error)=>{
-        console.log("la llamada fallo")
-    } )
-    .finally( () =>{
-    
-    })
-    
-    
-    },[])
 
 
 
 
     return(
-      <div>
-        <ItemList dataProducts={listProducts}/>
+      <div> 
+        <h1>Detalle</h1>
+   <ItemDetail data={productData}/>
+             
       </div>
 
     )

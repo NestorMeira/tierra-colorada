@@ -1,0 +1,31 @@
+.item-detail-image{
+    border:solid 1px black;
+    margin-left: 100px;
+    width: 400px;
+    height: 500px;
+}
+
+.reme2{
+    border:solid 1px black;
+    position: absolute;
+    margin: -480px 3px 590px 1px;
+    width: 50px;
+    height: 60px;
+}
+.reme3{
+    border:solid 1px black;
+    position: absolute;
+    margin: -400px 3px 590px 1px;
+    width: 50px;
+    height: 60px;
+}
+
+.item-detail-info{
+
+    position: absolute;
+    margin: -480px 3px 590px 520px;
+    span{
+        padding-top: 40px;
+        font-size: 20px;
+    }
+}

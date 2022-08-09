@@ -21,6 +21,9 @@ const ItemCount =()=>{
         
     },[contador] ) 
 
+
+    
+
     return(
         <div className="count-produc">
                 <button className='menos' onClick={removeNumber}>-</button>

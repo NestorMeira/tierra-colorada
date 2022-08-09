@@ -6,34 +6,21 @@
 
 
 .lista-productos{
+  float: left;
+  width: 450px;
+  box-shadow: 1p 1px 5px rgb(163, 161, 161);
+  border: 10px;
   display: flex;
-  flex-direction:row;
-  align-items:stretch;
-  width: 350px;
-  height: 350px;
-  margin: 20px 7px 60px 10px;
-
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
   img{
-    width: 340px;
-    height: 340px;
-    border: ridge black 1px ;
+     width: 100%;
   }
-  p{
-    position:absolute;
-    margin: 345px 2px 1px 105px;
-    font-size: 25px;
-    
-  }
-  button{
-    position:absolute;
-    margin: 460px 1px 1px 136px;
-  }
-  span{
-    position:absolute;
-    margin: 380px 2px 1px 140px;
-    font-size: 20px;
-  }
+  margin-left:30px ;
 }
+
 
 .icono-carrito{
   display: block;

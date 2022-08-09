@@ -1,7 +1,8 @@
 
 import ItemList from '../ItemList/ItemList';
-import products from '../utils/productsMock';
+import products2 from '../utils/remerasMock2';
 import { useEffect, useState } from 'react';
+
 
 
 const ItemListContainer = ({section})=>{
@@ -14,7 +15,7 @@ const [listProducts, setListProducts]= useState([])
 
 const getProducts= new Promise( (resolve,reject) =>{
     setTimeout( () =>{
-     resolve(products)
+     resolve(products2)
 
     }, 2000)
    
@@ -25,7 +26,7 @@ useEffect( () =>{
 
     getProducts
 .then( (res) =>{
-    // console.log("productos: ",res)
+    
     setListProducts(res)
 })
 .catch( (error)=>{
@@ -34,15 +35,7 @@ useEffect( () =>{
 .finally( () =>{
 
 })
-
-
 },[])
-
-
-
-
-
-
 
 
 
