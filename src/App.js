@@ -1,4 +1,3 @@
-
 import './App.scss';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
@@ -7,9 +6,8 @@ import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Products from './pages/Products';
 import Detail from './pages/Detail';
-import ItemDetail from './componentes/ItemDetail/ItemDetail';
+
 import Checkout from './pages/Checkout';
 function App() {
 
@@ -18,8 +16,6 @@ function App() {
 
     <BrowserRouter>
 
-   
- 
      <NavBar />
      <Routes>
 
@@ -29,8 +25,6 @@ function App() {
       <Route path='/productos/:id' element={< Detail/>}/>
       <Route path='/cart' element={<Checkout/>}/>
       <Route path='*' element={<h1>ERROR 404 -página no encontrada</h1>}/>
-
-
 
      </Routes>
     

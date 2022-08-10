@@ -1,26 +1,34 @@
 import ItemDetail from '../ItemDetail/ItemDetail';
 import products2 from '../utils/remerasMock2';
-import { useEffect, useState} from 'react';
+import React ,{ useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 
 
 const ItemDetailContainer = ()=>{
 
-const [productData, setProductData]= useState({})
 
 const {id} = useParams()
+const [productData, setProductData]= useState({})
 
-useEffect( () => {
-    filterById()
-},[])
-
-const filterById= ()=>{
-  products2.some( (product) => {
-    if(product.id == id){
-      setProductData(product)
-    }
-  })
+let coso= true;
+const promesa= (time, task) => {
+  return new Promise(( resolve,reject) =>{
+    setTimeout( ()=>{
+   (coso) ? resolve(task) : reject("Error")
+      
+  },time);
+  });
 }
+
+useEffect( () =>{
+  promesa(2000, products2.find( item => item.id === parseInt (id)))
+  .then((res) =>{
+    setProductData(res)
+  }).catch((err) =>{
+    console.log(err)
+  });
+},[]);
+
 
 
 
@@ -29,8 +37,8 @@ const filterById= ()=>{
     return(
       <div> 
         <h1>Detalle</h1>
-   <ItemDetail data={productData}/>
-             
+  {productData? <ItemDetail data={productData}></ItemDetail>
+   : <p>cargando... </p>   }       
       </div>
 
     )
