@@ -1,10 +1,12 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
-import './NavBar.scss'
+import {useState , useContext} from 'react'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
+
 const CartWidget=()=>{
+
     return(
-        <div className="icono-carrito">
-            <FontAwesomeIcon icon={faCartShopping} />
+        <div className='cart-widget' >
+            <ShoppingCartIcon />
         </div>
     )
 }

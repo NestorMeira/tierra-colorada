@@ -1,13 +1,21 @@
 import "./ItemDetail.scss"
 import ItemCount from "../ItemCount/ItemCount"
-import { useState } from "react"
+import { useState,useContext } from "react"
 import { Link } from "react-router-dom"
-
-
+import { CartContext } from '../../Context/CartContext'
 
 const ItemDetail= ({data})=>{
 
-    const [contadorSelecte, setContadorSelected] = useState(0)
+ const { addRmera } =useContext(CartContext)
+ const [cart, setCart] = useState ({});
+
+ const onAdd = (contador) =>{
+    setCart(data)
+    addRmera(data, contador)
+ }
+
+console.log(cart, 'uuu')
+
 
     return(
     <>
@@ -24,7 +32,7 @@ const ItemDetail= ({data})=>{
     
     <div className="item-detail-info">
     <span className="category"> {data.category}</span>
-    <h2>{data.tiulo}</h2>
+    <h2>{data.titulo}</h2>
     <p className="detail-info-precio">$ {data.precio}</p>
     <span>Talles</span>
     <div className="detail-info-talle">
@@ -32,13 +40,12 @@ const ItemDetail= ({data})=>{
         <button>M</button>
         <button>L</button>
         <button>XL</button>
+        
     </div>
-    {console.log("contador: ", contadorSelecte)}
     {
-    contadorSelecte > 0 ? <button><Link to="/cart">TERMINAR COMPRA</Link></button> : <ItemCount contadorSelected ={ setContadorSelected}/>
+     cart.id? <button><Link to="/cart">TERMINAR COMPRA</Link></button>
+     : <ItemCount  stock={data.stock}  initial={1} onAdd={onAdd}/>
     }
-    
-   
     </div>
     </>
 )

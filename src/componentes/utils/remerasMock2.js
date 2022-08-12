@@ -14,7 +14,7 @@ const products2= [
         category:"remera masculino",
         image:'remera2.png',
         precio:3700,
-        stock: 10
+        stock:3
     },
     {
         id:3,
@@ -22,7 +22,7 @@ const products2= [
         category:"remera masculino",
         image:'remera3.png',
         precio:3000,
-        stock: 10
+        stock: 6
     },
     {
         id:4,
@@ -30,7 +30,7 @@ const products2= [
         category:"remera masculino",
         image:'remera4.png',
         precio:2500,
-        stock: 10
+        stock: 9
     },
     {
         id:5,
@@ -38,7 +38,7 @@ const products2= [
         category:"remera masculino",
         image:'remera5.png',
         precio:3400,
-        stock: 10
+        stock: 5
     }
 ]
 

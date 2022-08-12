@@ -1,24 +1,28 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './ItemCount.scss'
 
-const ItemCount =({contadorSelected})=>{
 
-    const [contador, setContador] = useState(1)
+const ItemCount =(props)=>{
+
+
+    
+    const [contador, setContador] = useState(props.initial)
 
     const addContador = ()=>{
-            setContador(contador +1)
+            if(contador < props.stock){
+                setContador(contador +1)
+            }
     }
 
     const removeContador = ()=>{
-        setContador(contador -1)
+        if(contador > 1 ){
+            setContador(contador -1)
+        }
     }
 
-
-    const onAdd =()=>{
-        contadorSelected(contador)
-    }
-
-  
+const onClick = (e) => {
+    console.log(e);
+}
 
 
     
@@ -31,9 +35,9 @@ const ItemCount =({contadorSelected})=>{
                 <button onClick={addContador}>+</button>
                 </div>
                 <div className='agregar'>
-                <button  onClick={onAdd} >AGREGAR AL CARRITO</button>
+                <button onClick={() => props.onAdd(contador)} >AGREGAR AL CARRITO</button>
                 </div>
-                </>
+            </>
     );
 }
 
