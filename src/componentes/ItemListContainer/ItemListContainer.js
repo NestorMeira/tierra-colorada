@@ -1,21 +1,26 @@
 
 import ItemList from '../ItemList/ItemList';
 import products2 from '../utils/remerasMock2';
-import { useEffect, useState } from 'react';
-
-
+import React ,{ useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({section})=>{
 
+const {categoryName} = useParams()
 
 const [listProducts, setListProducts]= useState([])
 
+const filterCategory = products2.filter((products2) => products2.category === categoryName)
 
 
-
-const getProducts= new Promise( (resolve,reject) =>{
+const getProducts= 
+new Promise( (resolve,reject) =>{
     setTimeout( () =>{
-     resolve(products2)
+        if (categoryName){
+     resolve(filterCategory)
+    }else{
+        resolve(products2)
+    }
 
     }, 2000)
    
@@ -40,11 +45,14 @@ useEffect( () =>{
 
 
     return(
+        <>
+        
         <div className="lista-productos">
             <h2>{section}</h2> 
-       <ItemList dataProducts={listProducts}/>
+       <ItemList dataProducts={listProducts} filter={categoryName}/>
         </div>
-   
+
+        </>
     );
 
 }

@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Detail from './pages/Detail';
 import Cart from './componentes/Cart/Cart';
 import CartProvider from './Context/CartContext';
+import products2 from './componentes/utils/remerasMock2';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/contacto' element={<Contact />}/>
-      <Route path='/productos' element={<ItemListContainer />}/>
+      <Route path='/category/:categoryName' filter={products2} element={<ItemListContainer/>}/>      
       <Route path='/productos/:id' element={< Detail/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='*' element={<h1>ERROR 404 -página no encontrada</h1>}/>
