@@ -6,12 +6,12 @@ import { CartContext } from '../../Context/CartContext'
 
 const ItemDetail= ({data})=>{
 
- const { addRmera } =useContext(CartContext)
+ const { addRemera } =useContext(CartContext)
  const [cart, setCart] = useState ({});
 
  const onAdd = (contador) =>{
     setCart(data)
-    addRmera(data, contador)
+    addRemera(data, contador)
  }
 
 console.log(cart, 'uuu')
@@ -43,7 +43,8 @@ console.log(cart, 'uuu')
         
     </div>
     {
-     cart.id? <button><Link to="/cart">TERMINAR COMPRA</Link></button>
+     cart.id?
+     <div className="btn-terminar"><Link to="/cart"> <button>TERMINAR COMPRA</button></Link></div>
      : <ItemCount  stock={data.stock}  initial={1} onAdd={onAdd}/>
     }
     </div>

@@ -1,6 +1,6 @@
 import './NavBar.scss'
 import { Link } from 'react-router-dom';
-import CartWidget from './CartWidget'
+
 
 const NavBar = ()=>{
     return(
@@ -14,7 +14,6 @@ const NavBar = ()=>{
                 <Link to="/contacto"><li><button>contacto</button></li></Link>
                 <Link to="/category/:categoryName"><li><button>Categorias</button></li></Link>
             </ul>
-            <CartWidget  />
         </div>
     );
 }

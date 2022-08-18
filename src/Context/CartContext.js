@@ -6,14 +6,14 @@ const CartProvider = ({children})=>{
  
 const[cartPro, setCartPro] = useState([]);
 const[totalPro, setTotalPro] = useState(0);
+
 const getRemeraId = (id) => cartPro.find(e => e.id ===id)|| null;
 
 const addRemera = (newRemera, qty) =>{
     const remera = getRemeraId(newRemera.id);
     if(!remera){
-        setTotalPro(totalPro + newRemera.qty)
         newRemera.qty = qty;
-        setCartPro(cartPro =>[...cartPro, newRemera]);
+        setCartPro([...cartPro, newRemera]);
     }else{
         if(remera.qty + qty > remera.stock)
         return false;
@@ -21,7 +21,7 @@ const addRemera = (newRemera, qty) =>{
     }
     setTotalPro(totalPro + qty);
     return true;
-}
+} 
 console.log(cartPro, totalPro, "context");
 
 const removeRemera = (id)=>{

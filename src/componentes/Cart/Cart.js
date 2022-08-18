@@ -20,9 +20,9 @@ function Cart(){
     }
 
     return(
-        <div className="App">
+        <div className="app">
         <CartItem cartPro={cartPro}></CartItem>
-        <button onClick={hCartI}> BORRAR CARRITO</button>
+        <button onClick={hCartI}> VACIAR CARRITO</button>
         </div>
     );
 }

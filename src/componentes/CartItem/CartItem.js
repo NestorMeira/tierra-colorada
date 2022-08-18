@@ -3,7 +3,7 @@ import CartShow from "../CartShow/CartShow";
 function CartItem ({cartPro}) {
 
     return(
-        <div className="App">
+        <div className="app">
             {cartPro.map(e =>
                <CartShow
                key={e.id}

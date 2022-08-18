@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './ItemCount.scss'
 
 
@@ -35,7 +36,7 @@ const onClick = (e) => {
                 <button onClick={addContador}>+</button>
                 </div>
                 <div className='agregar'>
-                <button onClick={() => props.onAdd(contador)} >AGREGAR AL CARRITO</button>
+                <button onClick={() => props.onAdd(contador)} >+<ShoppingCartIcon /></button>
                 </div>
             </>
     );
