@@ -1,22 +1,23 @@
 
 import ItemList from '../ItemList/ItemList';
-import products2 from '../utils/remerasMock2';
 import React ,{ useEffect, useState } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
+import db from '../../firebaseConfig';
 import { useParams } from 'react-router-dom';
+import products2 from '../utils/remerasMock2';
+
 
 const ItemListContainer = ({section})=>{
 
-const {categoryName} = useParams()
+  const { categoryId } =useParams();
+  const [listProducts, setListProducts] = useState([])
 
-const [listProducts, setListProducts]= useState([])
+  const filterCategory = products2.filter((product) => product.category == categoryId)
 
-const filterCategory = products2.filter((products2) => products2.category === categoryName)
-
-
-const getProducts= 
+const getProduct= 
 new Promise( (resolve,reject) =>{
     setTimeout( () =>{
-        if (categoryName){
+        if (categoryId){
      resolve(filterCategory)
     }else{
         resolve(products2)
@@ -25,11 +26,9 @@ new Promise( (resolve,reject) =>{
     }, 2000)
    
 })
-    
-
+   
 useEffect( () =>{
-
-    getProducts
+    getProduct
 .then( (res) =>{
     
     setListProducts(res)
@@ -38,9 +37,35 @@ useEffect( () =>{
     console.log("la llamada fallo")
 } )
 .finally( () =>{
-
 })
-},[])
+
+},[categoryId])
+
+
+
+
+
+
+
+  const getProducts = async () => {
+      const productCollection = collection(db, 'productos')
+      const productSnapshot = await getDocs(productCollection)
+      const productList = productSnapshot.docs.map( (doc) => {
+          let product = doc.data()
+          product.id = doc.id
+          return product
+      })
+      return productList
+  }
+
+
+
+  useEffect(() => {
+      getProducts()
+      .then((res) => {
+          setListProducts(res)
+      })
+    },[])
 
 
 
@@ -48,8 +73,9 @@ useEffect( () =>{
         <>
         
         <div className="lista-productos">
-            <h2>{section}</h2> 
-       <ItemList dataProducts={listProducts} filter={categoryName}/>
+    
+        <h2>{section}</h2>
+            <ItemList dataProducts={listProducts}/>
         </div>
 
         </>
@@ -58,3 +84,10 @@ useEffect( () =>{
 }
 
     export default ItemListContainer
+
+
+
+    
+
+
+
