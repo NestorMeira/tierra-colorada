@@ -6,6 +6,7 @@ const CartProvider = ({children})=>{
  
 const[cartPro, setCartPro] = useState([]);
 const[totalPro, setTotalPro] = useState(0);
+const [totalPrecio, setTotalPecio] =useState(0)
 
 const getRemeraId = (id) => cartPro.find(e => e.id ===id)|| null;
 
@@ -19,8 +20,10 @@ const addRemera = (newRemera, qty) =>{
         return false;
         remera.qty += qty
     }
-    setTotalPro(totalPro + qty);
+    setTotalPro(totalPro + qty)
+    setTotalPecio(totalPrecio +  remera.precio * qty)
     return true;
+   
 } 
 console.log(cartPro, totalPro, "context");
 
@@ -33,6 +36,7 @@ const removeRemera = (id)=>{
 const clear = ()=> {
     setCartPro([]);
     setTotalPro(0);
+    setTotalPecio(0);
 }
 
 
@@ -41,7 +45,7 @@ const isInCart = (remera) => getRemeraId (remera.id)? true : false
 
 
     return(
-        <CartContext.Provider value={{cartPro, totalPro, addRemera, removeRemera, clear, isInCart, getRemeraId}}>
+        <CartContext.Provider value={{cartPro, totalPro,totalPrecio, addRemera, removeRemera, clear, isInCart, getRemeraId}}>
             {children}
         </CartContext.Provider>
     )
