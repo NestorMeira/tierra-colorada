@@ -7,19 +7,18 @@ const ItemCount =(props)=>{
 
 
     
-    const [contador, setContador] = useState(props.initial)
+const [contador, setContador] = useState(props.initial)
 
-    const addContador = ()=>{
-            if(contador < props.stock){
-                setContador(contador +1)
-            }
-    }
+const addContador = ()=>{
+ if(contador < props.stock){
+ setContador(contador +1)
+ }}
 
-    const removeContador = ()=>{
-        if(contador > 1 ){
-            setContador(contador -1)
-        }
+const removeContador = ()=>{
+    if(contador > 1 ){
+        setContador(contador -1)
     }
+}
 
 const onClick = (e) => {
     console.log(e);
@@ -28,18 +27,18 @@ const onClick = (e) => {
 
     
 
-    return(
-        <>
+return(
+    <>
         <div className="count-produc">
-                <button className='menos' onClick={removeContador}>-</button>
-              <span>{contador}</span>
-                <button onClick={addContador}>+</button>
-                </div>
-                <div className='agregar'>
-                <button onClick={() => props.onAdd(contador)} >+<ShoppingCartIcon /></button>
-                </div>
-            </>
-    );
+            <button className='menos' onClick={removeContador}>-</button>
+            <span>{contador}</span>
+            <button onClick={addContador}>+</button>
+            </div>
+            <div className='agregar'>
+            <button onClick={() => props.onAdd(contador)} >+<ShoppingCartIcon /></button>
+        </div>
+    </>
+);
 }
 
 export default ItemCount

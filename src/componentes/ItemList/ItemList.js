@@ -1,9 +1,8 @@
-import { useContext } from "react"
-import { CartContext } from "../../Context/CartContext"
+
 import ItemProduct from "../ItemProduct/ItemProduct"
 
 const ItemList = ({dataProducts})=> {
-  console.log("info del contexto ",useContext(CartContext))
+
     return(
     <>
      {dataProducts.map( (product2) => {    

@@ -1,10 +1,48 @@
-.count-produc{
+.lista-productos{
+    
      display: flex;
+     flex-direction: column;
      justify-content: center;
+     text-align: center;
+     width: 260px;
+     background-color: rgb(41, 41, 41);
+     img{
+        width: 100%;
+        border-radius: 26px;
+     }
+     margin:10px auto ;
+     h2{
+       color: rgb(255, 255, 255);
+       background-color: rgb(53, 49, 49);
+       font-size: 40px;
+       font-family: -webkit-body;
+       border: 1px solid #CCC;
+   }
+   h3{
+     color: rgb(255, 255, 255);
+   }
+   span{
+     color: rgb(255, 255, 255);
+     font-size: 35px;
+       font-family: -webkit-body;
+   }
+   p{
+     color: rgb(255, 255, 255);
+     font-size: 30px;
+       font-family: -webkit-body;
+   }
+   button{
+   
+     font-size: 25px;
+     padding: 5px;
+     width: 70%;
+     border-radius: 18px;
      
+   }
+   }
+   
 
 
 
 
 
-}

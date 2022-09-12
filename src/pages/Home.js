@@ -5,7 +5,8 @@ const Home = ()=>{
         
         <div className="App">
         <div className="lista-productos">
-        <ItemListContainer section="productos nuevos"/>
+            <h2>remeras para los materos</h2>
+        <ItemListContainer />
         
          </div>
          </div>

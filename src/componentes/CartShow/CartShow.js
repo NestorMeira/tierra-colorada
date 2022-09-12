@@ -57,16 +57,19 @@ function CartShow ({data}) {
             <h1>{data.titulo}</h1>
             <img src={`/assets/${data.image}`} alt="imagen" />
             <h3>${data.precio}</h3>
-            <h2>cantidad: {data.qty}</h2>
+            <h2>cantidad: {data.qty }</h2>
+            <h3>total={data.precio * data.qty}</h3>
             <div>
+           
+            
                 <button onClick={hRemov}>borrar</button>
             </div>
             <button onClick={() => setShowModal(true)}>IR A PAGAR</button>
             { showModal &&
             <Modal title="datos de contacto" close={()=>setShowModal()}> 
             {success ? ( <>
-            <h2>su orden se genero</h2>
-            <p>ID de compra : {success}</p>
+            <h2>su orden se genero exitosamente</h2>
+            <p> ID de compra :{success}</p>
             </>):
               (
                 <form onSubmit={submitData}>

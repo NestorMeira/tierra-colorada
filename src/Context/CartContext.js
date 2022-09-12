@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 const CartContext = createContext()
 
-const CartProvider = ({children})=>{
+const CartProvider = ({children,data})=>{
  
 const[cartPro, setCartPro] = useState([]);
 const[totalPro, setTotalPro] = useState(0);
@@ -15,20 +15,24 @@ const addRemera = (newRemera, qty) =>{
     if(!remera){
         newRemera.qty = qty;
         setCartPro([...cartPro, newRemera]);
+        const total= totalPrecio + remera.qty * remera.precio;
+        setTotalPecio(total)
+
     }else{
         if(remera.qty + qty > remera.stock)
         return false;
         remera.qty += qty
     }
     setTotalPro(totalPro + qty)
-    setTotalPecio(totalPrecio +  remera.precio * qty)
+
     return true;
    
 } 
-console.log(cartPro, totalPro, "context");
+
+
 
 const removeRemera = (id)=>{
-    const result = cartPro.filter(el => el.id !== parseInt (id));
+    const result = cartPro.filter(el => el.id != parseInt (id));
     setCartPro(result)
    
 }
@@ -45,7 +49,15 @@ const isInCart = (remera) => getRemeraId (remera.id)? true : false
 
 
     return(
-        <CartContext.Provider value={{cartPro, totalPro,totalPrecio, addRemera, removeRemera, clear, isInCart, getRemeraId}}>
+        <CartContext.Provider value={{
+            cartPro,
+            totalPro,
+            totalPrecio,
+            addRemera,
+            removeRemera,
+            clear, 
+            isInCart,
+            getRemeraId}}>
             {children}
         </CartContext.Provider>
     )

@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 import products2 from '../utils/remerasMock2';
 
 
-const ItemListContainer = ({section})=>{
+const ItemListContainer = ()=>{
 
   const { categoryId } =useParams();
   const [listProducts, setListProducts] = useState([])
@@ -73,8 +73,6 @@ useEffect( () =>{
         <>
         
         <div className="lista-productos">
-    
-        <h2>{section}</h2>
             <ItemList dataProducts={listProducts}/>
         </div>
 

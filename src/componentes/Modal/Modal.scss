@@ -51,3 +51,15 @@ button[type=submit]{
     border: 1px solid black;
     bottom: 104px;
 }
+
+@media screen and (max-width:550px){
+    .backshadow .custom-modal{
+        width: 80%;
+        margin: auto;
+    }
+    button[type=submit]{
+        width: 100%;
+    }
+      
+  }
+  

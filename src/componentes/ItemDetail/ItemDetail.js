@@ -14,7 +14,7 @@ const ItemDetail= ({data})=>{
     addRemera(data, contador)
  }
 
-console.log(cart, 'uuu')
+
 
 
     return(
@@ -22,14 +22,6 @@ console.log(cart, 'uuu')
     <div className="item-detail-image">
     <img src={`/assets/${data.image}`} alt="imagen" />
     </div>
-    <div  className="reme2">
-    <img src="/assets/remera1.png" alt="imagen"/>
-    </div >
-    <div  className="reme3">
-    <img src="/assets/remera1.png" alt="imagen"/>
-    </div >
-    
-    
     <div className="item-detail-info">
     <span className="category"> {data.category}</span>
     <h2>{data.titulo}</h2>

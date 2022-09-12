@@ -2,7 +2,26 @@
 
 const Contact =()=>{
     return(
-        <h1>contacto</h1>
+        <div className="contac">
+          <form >
+                 <input 
+                    type='text' 
+                    name='name' 
+                    placeholder='Nombre'
+                    />
+                 <input 
+                    type='number' 
+                    name='phone'  
+                    placeholder='Telefono'                   
+                    />
+                 <input 
+                    type='email' 
+                    name='email'  
+                    placeholder='Email'
+                    />
+                    <button type='submit'>Enviar</button>
+                </form>
+                </div>
     );
 }
 

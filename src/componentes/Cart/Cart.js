@@ -3,7 +3,8 @@ import { CartContext } from '../../Context/CartContext';
 import CartItem from '../CartItem/CartItem';
 
 
-function Cart(){
+
+function Cart(props){
 
     const { cartPro, clear } = useContext(CartContext);
 
@@ -13,7 +14,7 @@ function Cart(){
 
     if(!cartPro.length) {
         return(
-            <div>
+            <div className="noHayProductos">
                 <h2>No hay productos en el carro</h2>
             </div>
         )
@@ -23,6 +24,7 @@ function Cart(){
         <div className="app">
         <CartItem cartPro={cartPro}></CartItem>
         <button onClick={hCartI}> VACIAR CARRITO</button>
+  
         </div>
     );
 }
