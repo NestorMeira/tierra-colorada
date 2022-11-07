@@ -20,13 +20,15 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/category/:categoryId' element={<ItemListContainer/>}/> 
       <Route path='/contacto' element={<Contact />}/>     
-      <Route path='/productos/:id' element={< Detail/>}/>
+      <Route path='/productos/:id' element={<Detail/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='*' element={<h1>ERROR 404 -página no encontrada</h1>}/>
-     </Routes>
+     </Routes> 
      <Footer />
     </BrowserRouter>
    </CartProvider>
+
+   
     
   );
 }

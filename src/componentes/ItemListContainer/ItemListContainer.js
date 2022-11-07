@@ -12,7 +12,7 @@ const ItemListContainer = ()=>{
   const { categoryId } =useParams();
   const [listProducts, setListProducts] = useState([])
 
-  const filterCategory = products2.filter((product) => product.category == categoryId)
+  const filterCategory = products2.filter((product) => product.category === categoryId)
 
 const getProduct= 
 new Promise( (resolve,reject) =>{
@@ -23,7 +23,7 @@ new Promise( (resolve,reject) =>{
         resolve(products2)
     }
 
-    }, 2000)
+    },1000)
    
 })
    
@@ -67,7 +67,7 @@ useEffect( () =>{
       })
     },[])
 
-
+  
 
     return(
         <>

@@ -5,7 +5,6 @@ const Home = ()=>{
         
         <div className="App">
         <div className="lista-productos">
-            <h2>remeras para los materos</h2>
         <ItemListContainer />
         
          </div>

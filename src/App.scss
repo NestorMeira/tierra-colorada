@@ -1,69 +1,43 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:bolder;
 }
-
-
-body{
-  background:linear-gradient(rgba(6, 6, 6, 0.6),rgba(23, 23, 23, 1)), 
-  url(https://media.istockphoto.com/photos/baiting-mate-picture-id466323383?k=20&m=466323383&s=170667a&w=0&h=jzfRNTacK0IFj4MnrdqTwHkW67IqTP8vWar8uNRBR2E=);
-
-}
-.lista-productos{
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 260px;
-  background-color: rgb(41, 41, 41);
-  img{
-     width: 100%;
-     border-radius: 26px;
-  }
-  margin:10px auto ;
-  h2{
-    color: rgb(255, 255, 255);
-    background-color: rgb(53, 49, 49);
-    font-size: 40px;
-    font-family: -webkit-body;
-    border: 1px solid #CCC;
-}
-h3{
-  color: rgb(255, 255, 255);
-}
-span{
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-    font-family: -webkit-body;
-}
-p{
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-    font-family: -webkit-body;
-}
-button{
-
-  font-size: 25px;
-  padding: 5px;
-  width: 70%;
-  border-radius: 18px;
-  
-}
-}
-
 
 .icono-carrito{
   display: inline-flexbox;
-
-width:auto;
-  margin: 1px 0 0 920px;
+  width:auto;
+  margin: 1px 0 0 74%;
   button{
     background: white;
-    font-size: 20px;
-    padding: 5px;
-    width: 50px;
-    border: 1px solid #CCC;
+    border: none;
+    color: rgba(250, 76, 52, 1);
+    font-size: 26px;
+
+    .carrito{
+      font-size: 38px;
+      color: rgba(250, 76, 52, 1);
+      margin-bottom: -10px;
+    }
+  }
+}
+.producto-en-carro{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  .carrito{
+    color: rgba(250, 76, 52, 1);
+    font-size: 35px;
+    margin: 1px 10px;
+    padding: 2px;
+  }
+  h3{
+    color: rgba(250, 76, 52, 1);
+    font-size: 32px;
+    margin: 0px 10px;
   }
 }
 
@@ -92,40 +66,83 @@ width:auto;
   }
 }
 
+.pagar-todo{
+  h2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:auto;
+    font-size: 35px;
+  }
+  p{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 25px;
+    background: rgb(62, 57, 57);
+    color: white;
+    height: 60px;
+    border-radius: 15px;
+   
+  }
+}
 
 
 
 @media screen and (max-width:1021px){
   .icono-carrito{
-    margin: 1px 0 0 670px;
+    margin: 1px 0 0 60%;
   }
     
 }
 
-@media screen and (max-width:722px){
+@media screen and (max-width:767px){
   .icono-carrito{
-    margin: 1px 0 0 265px;
+    margin: 1px 0 0 55%;
+  }
+}
+
+@media screen and (max-width:426px){
+  .icono-carrito{
+    margin: 1px 0 0 29%;
+  }
+  .noHayProductos{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    background-color: rgb(53, 49, 49);
+    width: 80%;
+    
+    padding: 18px;
+   
   }
     
+}
+@media screen and (max-width:388px){
+  .icono-carrito{
+    margin: 1px 0 0 18%;
+    button{
+    font-size: 18px;
+ 
+  .carrito{
+    font-size: 30px;
+  }
+}
+  }
 }
     
 
 .footer{
-  opacity: 0.9;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  margin:150px 0 0  auto;
-  background: #CCC;
+  margin:80vh 0 0  auto;
+  background: rgb(0, 0, 0);
   width:auto;
   height: 70px;
-
-  h1{
-    margin: auto;
-    font-size: 19px;
-  }
   a{
-  color: rgb(39, 37, 37);
-  margin: auto;
+    color: rgba(250, 76, 52, 1);
+    margin: 10px;
 
 }
 }

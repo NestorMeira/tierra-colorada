@@ -13,17 +13,12 @@ const ItemDetail= ({data})=>{
     setCart(data)
     addRemera(data, contador)
  }
-
-
-
-
     return(
     <>
     <div className="item-detail-image">
     <img src={`/assets/${data.image}`} alt="imagen" />
     </div>
     <div className="item-detail-info">
-    <span className="category"> {data.category}</span>
     <h2>{data.titulo}</h2>
     <p className="detail-info-precio">$ {data.precio}</p>
     <span>Talles</span>

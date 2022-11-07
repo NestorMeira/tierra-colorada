@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
 import { Link } from 'react-router-dom'
 import CartWidget from './CartWidget'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Navbar() {
 
@@ -13,15 +15,21 @@ function Navbar() {
   }
   return (
     <>
-      <NavContainer>
-      <Link to="/"> <img src="/assets/logo.png" alt="logo-calmate" className="logo"/></Link>
+      <NavContainer> 
         <div className={`links ${clicked ? 'active' : ''}`}>
+        <div className='redes'>
+        <FacebookIcon className='icono-redes'/><InstagramIcon className='icono-redes'/>
+        </div>
+        <div className='nav-superior'>
+        <Link to="/" className='linea'><li onClick={handleClick}>inicio</li></Link>
+        <Link to="/contacto" className='linea'><li onClick={handleClick}>contacto</li></Link>
+        <CartWidget/>
+      </div>
+      <Link to="/"> <img src="/assets/logo.png" alt="logo" className="logo"/></Link>
         <ul>
-    <Link to="/" className='linea'><li onClick={handleClick}>inicio</li></Link>
-    <Link to="/contacto" className='linea'><li onClick={handleClick}>contacto</li></Link>
-    <Link to='/category/remeranegra' className='linea'><li onClick={handleClick}>remeras negras</li></Link>
-    <Link to='/category/remerablanca' className='linea'><li onClick={handleClick}>remeras blancas</li></Link>
-    <Link to='/category/remeradamas' className='linea'><li onClick={handleClick}>para damas</li></Link>
+    <Link to='/category/remerahombre' className='linea'><li onClick={handleClick}><button>Hombre</button></li></Link>
+    <Link to='/category/remeramujer' className='linea'><li onClick={handleClick}><button>Mujer</button></li></Link>
+    <Link to="/" className='linea'><li onClick={handleClick}><button>Todos</button></li></Link>
        </ul>
         </div>
         <div className='burguer'>
@@ -29,7 +37,6 @@ function Navbar() {
         </div>
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
       </NavContainer>
-      <CartWidget/>
     </>
   )
 }
@@ -37,25 +44,58 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.nav`
- img{
-  width: 95px;
-  border-radius:100px;
-  margin-left:30px;
+padding: .4rem;
+display: flex;
+align-items:center;
+justify-content: space-between;
+.redes{
+ display:flex;
+ justify-content:flex-end;
+ align-items:center;
+ height:40px;
+ background: black;
+ .icono-redes{
+ color: rgba(250, 76, 52, 1);
+ margin:1%;
+ font-size:28px;
+ }
+}
+ .logo{
+  width: 23%;
+  margin:-15px 0 10px 10px;
+ }
+ .nav-superior{
+  display:flex;
+  justify-content:flex-start;
+  margin:20px 0 -30px 30px;
+  li{
+  color: rgba(250, 76, 52, 1);
+  font-size:25px
+  }
  }
  .linea{
   text-decoration:none;
  }
-
-  padding: .4rem;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+ ul{
+  display:flex;
+  justify-content:center;
+  margin:10px 0 10px 5%;
+  color:white;
+ }
   li{
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
+   button{
+    background-color: rgba(250, 76, 52, 1);
+    color: rgb(255, 255, 255);
+    width:91px;
+    height:30px;
+    font-size:15px;
+    border:none;
+    border-radius:20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   } 
+    margin-right: 1.7rem;
   }
+
   .links{
     position: absolute;
     top: -700px;
@@ -65,42 +105,75 @@ const NavContainer = styled.nav`
     margin-right: auto;
     text-align: center;
     transition: all .5s ease;
+    
     li{
-      color: white;
-      font-size: 2rem;
+      color: rgba(250, 76, 52, 1);
+      font-size: 20px;
       display: block;
     }
     @media(min-width: 768px){
       position: initial;
       margin: 0;
+      .nav-superior{
+        display:flex;
+        justify-content:flex-start;
+        margin
+        margin-bottom:-30px;
+        margin-left:30px;
+        li{
+        color: rgba(250, 76, 52, 1);
+        font-size:25px;
+        text-shadow: 3px 3px 4px #0006;
+        }
+       }
       li{
         font-size: 1rem;
-        color: white;
+        color: rgb(255, 255, 255);
         display: inline;
       }
       display: block;
     }
   }
   @media(max-width: 425px){
+    margin-right: 0.5rem;
   .links.active{
     width: 100%;
-    display: block;
-    position: absolute;
+    height:50%;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 12%;
     left: 0;
     right: 0;
-    text-align: center;
-    
-    li{
-      background-color: #222;
-      font-size: 2rem;
-      width: 80%%;
-      color: white;
+    background-color: white;
+  
+    .logo{
+      margin-top:40px;
     }
+    li{
+      font-size: 2rem;
+      width: 80%;
+      color: rgba(250, 76, 52, 1);
+      margin-right: 0.5rem;
+    }
+    .nav-superior{
+      display:flex;
+      justify-content:flex-start;
+      margin
+      margin-bottom:-30px;
+      margin-left:20px;
+      li{
+      color: rgba(250, 76, 52, 1);
+      font-size:24px;
+      text-shadow: 3px 3px 4px #0006;
+      }
+     }
   }
 }  
+
+.burguer{
+  background-color: rgba(250, 76, 52, 1);
+  border-radius:8px;
+}
   .burguer{
     @media(min-width: 768px){
       display: none;
@@ -119,7 +192,6 @@ const BgDiv = styled.div`
   transition: all .6s ease ;
   
   &.active{
-
     top: 0;
     left: 0;
     width: 100%;

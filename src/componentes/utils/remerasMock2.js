@@ -2,93 +2,131 @@
 const products2= [
     {
         id:1,
-        titulo:"remera1",
-        category:"remeranegra",
-        image:'remera1.png',
+        titulo:"Remera Succeed",
+        category:"remerahombre",
+        image:'remera1.jpg',
+        color:"blanco",
         precio:3250,
         stock: 10
     },
     {
         id:2,
-        titulo:"remera2",
-        category:"remeranegra",
-        image:'remera2.png',
+        titulo:"Remera Black",
+        category:"remerahombre",
+        image:'remera2.jpg',
+        color:"blanco",
         precio:3700,
         stock:3
     },
     {
         id:3,
-        titulo:"remera3",
-        category:"remerablanca",
-        image:'remera3.png',
+        titulo:"Remera Black-1",
+        category:"remeramujer",
+        image:'remera3.jpg',
+        color:"blanco",
         precio:3000,
         stock: 6
     },
     {
         id:4,
-        titulo:"remera4",
-        category:"remerablanca",
-        image:'remera4.png',
+        titulo:"Remera Tranquilo",
+        category:"remerahombre",
+        image:'remera4.jpg',
+        color:"blanco",
         precio:2500,
         stock: 9
     },
     {
         id:5,
-        titulo:"remera5",
-        category:"remerablanca",
-        image:'remera5.png',
+        titulo:"Remera Retroceder Jamas",
+        category:"remeramujer",
+        image:'remera5.jpg',
+        color:"blanco",
         precio:3400,
         stock: 5
     },
     {
         id:6,
-        titulo:"remera6",
-        category:"remeradamas",
-        image:'remera6.png',
+        titulo:"Remera Resistencia",
+        category:"remeramujer",
+        image:'remera6.jpg',
+        color:"negro",
         precio:3000,
         stock: 8
     },
     {
         id:7,
-        titulo:"remera7",
-        category:"remeradamas",
-        image:'remera7.png',
+        titulo:"Remera Adelante",
+        category:"remeramujer",
+        image:'remera7.jpg',
+        color:"blanco",
         precio:3000,
         stock: 12
     },
     {
         id:8,
-        titulo:"remera8",
-        category:"remeradamas",
-        image:'remera8.png',
+        titulo:"Remera Good",
+        category:"remerahombre",
+        image:'remera8.jpg',
+        color:"blanco",        
         precio:2900,
         stock: 4
     },
     {
         id:9,
-        titulo:"remera9",
-        category:"remeradamas",
-        image:'remera9.png',
-        precio:3000,
-        stock: 20
+        titulo:"Remera Bro",
+        category:"remerahombre",
+        image:'remera9.jpg',
+        color:"negro",                        
+        precio:1800,
+        stock: 4
     },
     {
         id:10,
-        titulo:"remera10",
-        category:"remeradamas",
-        image:'remera10.png',
-        precio:3500,
-        stock: 7
+        titulo:"Remera Black-2",
+        category:"remeramujer",
+        image:'remera10.jpg',
+        color:"blanco",
+        precio:2900,
+        stock: 20
     },
     {
         id:11,
-        titulo:"remera11",
-        category:"remeradamas",
-        image:'remera11.png',
-        precio:3400,
-        stock: 14
+        titulo:"Remera Un paso dos adelante",
+        category:"remeramujer",
+        image:'remera11.jpg',
+        color:"negro",
+        precio:2000,
+        stock: 15
+    },
+    {
+        id:12,
+        titulo:"Remera Un paso dos adelante",
+        category:"remeramujer",
+        image:'remera12.jpg',
+        color:"blanco",
+        precio:2000,
+        stock: 11
+    },
+    {
+        id:13,
+        titulo:"Remera Adelantee",
+        category:"remeramujer",
+        image:'remera13.jpg',
+        color:"negro",
+        precio:2900,
+        stock: 9
+    },
+    {
+        id:14,
+        titulo:"Remera Resistencia",
+        category:"remeramujer",
+        color:"blanco",
+        image:'remera14.jpg',
+        precio:2900,
+        stock: 20
     }
-    
+
 ]
 
 export default products2

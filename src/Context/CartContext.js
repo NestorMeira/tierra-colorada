@@ -17,6 +17,7 @@ const addRemera = (newRemera, qty) =>{
         setCartPro([...cartPro, newRemera]);
         const total= totalPrecio + remera.qty * remera.precio;
         setTotalPecio(total)
+        
 
     }else{
         if(remera.qty + qty > remera.stock)

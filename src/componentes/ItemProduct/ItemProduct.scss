@@ -1,44 +1,87 @@
+.contenedor-lista{
+  width: 240px;
+  margin: 2%;
+
+}
 .lista-productos{
-    
      display: flex;
-     flex-direction: column;
      justify-content: center;
-     text-align: center;
-     width: 260px;
-     background-color: rgb(41, 41, 41);
+     align-items: center;
+     flex-wrap: wrap;
+     border: none;
+     border-radius: 10px 10px 0 0;
      img{
-        width: 100%;
-        border-radius: 26px;
+        width: 98%;
+        border-radius: 10px 10px 0 0;
+        height: 310px;
+        border: 1.3px solid #c0bdbd;
+        border-bottom: none;
+       
      }
-     margin:10px auto ;
-     h2{
-       color: rgb(255, 255, 255);
-       background-color: rgb(53, 49, 49);
-       font-size: 40px;
-       font-family: -webkit-body;
-       border: 1px solid #CCC;
-   }
+
+  .descripcion{
+    margin: 0.5%;
+    padding: 3px;
+    width: 100%;
+    border: 0.5px solid #c0bdbd;
+    border-top: none;
+    height: 237px;
+   
    h3{
-     color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+     margin-top: 12px;
+     margin-left: 5px;
    }
    span{
-     color: rgb(255, 255, 255);
-     font-size: 35px;
-       font-family: -webkit-body;
+     color: rgb(0, 0, 0);
+     font-size: 20px;
+     margin: 0px 0 0 6px;
    }
    p{
-     color: rgb(255, 255, 255);
-     font-size: 30px;
-       font-family: -webkit-body;
+     color: rgb(0, 0, 0);
+     font-size: 20px;
+     margin:12px 0 12px 5px;
+     height: 40px;
+   }
+   .talle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:-10px 0 10px auto ;
+    h3{
+    margin-left:-35px;
+    margin-bottom:6px ;
+    }
+    button{ 
+      width: 23px;
+      font-size: 12px;
+      margin:2px 5px 0 8px;
+      background: #d6d3d3;
+      color: black;
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 25px;
+      &:hover{
+        background: rgba(250, 76, 52, 1);
+        color:aliceblue;
+      }
+    }
    }
    button{
-   
-     font-size: 25px;
+     font-size: 16px;
      padding: 5px;
-     width: 70%;
+     width: 64%;
+     border: none;
      border-radius: 18px;
-     
+     margin-left: 16%;
+     margin-top: 30px;
+     margin-bottom: 10px;
+     background: rgba(250, 76, 52, 1);
+     color:aliceblue;
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   
    }
+   
+  }
    }
    
 

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './ItemCount.scss'
+import Swal from 'sweetalert2'
 
 
 const ItemCount =(props)=>{
@@ -30,13 +30,22 @@ const onClick = (e) => {
 return(
     <>
         <div className="count-produc">
-            <button className='menos' onClick={removeContador}>-</button>
+            <h3>Cantidad</h3>
+            <button onClick={removeContador}>-</button>
             <span>{contador}</span>
-            <button onClick={addContador}>+</button>
+            <button onClick={addContador}>+</button>  
             </div>
             <div className='agregar'>
-            <button onClick={() => props.onAdd(contador)} >+<ShoppingCartIcon /></button>
-        </div>
+            <button onClick={() =>{
+                Swal.fire({
+                    title: 'Tu producto fue agregado al carrito',
+                    imageUrl: '/assets/logo.png',
+                    imageWidth: 200,
+                    imageHeight: 100,
+                    imageAlt: 'Custom image',      
+                 }) 
+                 props.onAdd(contador)}}>Agregar al carrito</button>
+            </div>
     </>
 );
 }

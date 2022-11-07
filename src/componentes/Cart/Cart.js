@@ -1,13 +1,15 @@
 import { useContext } from "react";
 import { CartContext } from '../../Context/CartContext';
 import CartItem from '../CartItem/CartItem';
+import Pagar from '../Pagar/Pagar';
+import RemoveShoppingCartOutlinedIcon from '@mui/icons-material/RemoveShoppingCartOutlined';
 
 
 
-function Cart(props){
+function Cart(){
 
-    const { cartPro, clear } = useContext(CartContext);
-
+    const { cartPro, clear} = useContext(CartContext);
+   
     const hCartI = ()=>{
         clear();
     }
@@ -23,8 +25,9 @@ function Cart(props){
     return(
         <div className="app">
         <CartItem cartPro={cartPro}></CartItem>
-        <button onClick={hCartI}> VACIAR CARRITO</button>
-  
+        <button onClick={hCartI} className="vaciar"> <RemoveShoppingCartOutlinedIcon className="vaciar-icono"/> Vaciar carrito</button>
+        <Pagar/>
+       
         </div>
     );
 }

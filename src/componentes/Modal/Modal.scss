@@ -7,14 +7,17 @@
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
+   
 }
 
 .backshadow .custom-modal {
-    width: 500px;
-    height: 500px;
+    margin-top: 40px;
+    width: 63%;
+    height: 540px;
     background-color: #fff;
     position: relative;
     padding: 20px;
+    overflow: scroll;
 }
 
 .delete-icon {
@@ -33,7 +36,10 @@
     top: 0px;
     right: 0px;
 }
-
+.close{
+    margin-left: 92%;
+   
+}
 input[type=text], [type=number], [type=email] {
     width: 100%;
     padding: 12px 20px;
@@ -43,13 +49,14 @@ input[type=text], [type=number], [type=email] {
 
 button[type=submit]{
     content: "";
-    width: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40% 0 auto;
+    width: 20%;
     height: 50px;
-    position: center;
-    top: -45px;
-    left: -14px;
     border: 1px solid black;
-    bottom: 104px;
+  
 }
 
 @media screen and (max-width:550px){

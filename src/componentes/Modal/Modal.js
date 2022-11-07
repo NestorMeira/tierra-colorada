@@ -5,7 +5,7 @@ const Modal = ({ titulo, close, children }) => {
     return(
         <div className="backshadow">
             <div className='custom-modal'>
-                <CloseIcon onClick={() => close(false)}/>
+                <CloseIcon  onClick={() => close(false)} className="close"/>
                 <h2>{titulo}</h2>
                 {children}
             </div>
