@@ -31,6 +31,16 @@ const addRemera = (newRemera, qty) =>{
 } 
 
 
+const calculateTotal = () => {
+    let total = 0;
+
+    cartPro.forEach((remera) => {
+      total += remera.precio * remera.qty;
+    });
+
+    return total;
+  };
+const totalCompra=calculateTotal() + totalPrecio
 
 const removeRemera = (id)=>{
     const result = cartPro.filter(el => el.id != parseInt (id));
@@ -52,6 +62,7 @@ const isInCart = (remera) => getRemeraId (remera.id)? true : false
     return(
         <CartContext.Provider value={{
             cartPro,
+            totalCompra,
             totalPro,
             totalPrecio,
             addRemera,

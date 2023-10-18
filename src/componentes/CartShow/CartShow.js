@@ -10,7 +10,7 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
 function CartShow ({data}) {
  
-    const {removeRemera, totalPro, totalPrecio} =useContext(CartContext);
+    const {removeRemera,} =useContext(CartContext);
        
    
    const hRemov = () =>{
@@ -18,7 +18,7 @@ function CartShow ({data}) {
     }
 
 
-   const total =data.precio * data.qty
+
 
     return(
         <>
@@ -27,7 +27,7 @@ function CartShow ({data}) {
             <h1>{data.titulo}</h1>
             <h2>cantidad: {data.qty }</h2>
             <h3>${data.precio}</h3>
-            <h4>total: {total}</h4>
+        
             <button onClick={hRemov}><DeleteOutlineIcon className='delete'/></button>
         </div>
         </>

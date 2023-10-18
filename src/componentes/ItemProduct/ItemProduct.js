@@ -7,7 +7,7 @@ import { CartContext } from '../../Context/CartContext'
 
 const ItemProduct = ({data}) => {
 
-const {titulo, image, precio, stock, id} = data
+const {titulo, image, precio,id,medida} = data
 const { addRemera } =useContext(CartContext)
  const [cart, setCart] = useState ({});
 
@@ -20,14 +20,11 @@ const { addRemera } =useContext(CartContext)
       <div className='contenedor-lista'>
         <div className="lista-productos">
             <img src={`/assets/${image}`} alt="inagen producto" className="remera1"/>
-            <div className='descripcion'>         
+            <div className='descripcion'>  
+            <h6>cod.{id}</h6>       
             <p>{titulo}</p>
+            <p>{medida}</p>
             <div className='talle'>
-            <h3>Talles</h3>  
-            <button>S</button>
-            <button>M</button>
-            <button>L</button>
-            <button>XL</button>
             </div>
             <span>${precio}</span>
             <ItemCount  stock={data.stock}  initial={1} onAdd={onAdd}/>

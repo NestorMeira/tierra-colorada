@@ -8,7 +8,7 @@ const Pagar = ()=>{
 
     const [showModal, setShowModal] = useState(false)
     const [success, setSuccess] = useState()
-    const {cartPro,totalPrecio} =useContext(CartContext);
+    const {cartPro,totalCompra} =useContext(CartContext);
 
 
 
@@ -35,18 +35,34 @@ const Pagar = ()=>{
             return {
                 id: product.id,
                 titulo: product.titulo,
-                precio: product.precio
+                precio: product.precio,
+                image:product.image,
+               category:product.category,
             }
+
         } ),
         buyer: {},
         date: new Date().toLocaleString(),
-        total: totalPrecio
+        total: totalCompra
     })
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
         email:''
     })
+
+
+
+    const sendWhatsAppMessage = () => {
+        const numero = '+543751606367';  
+        const mensaje = 'Hola, he realizado un pedido.';
+   
+        const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
+      
+        // Abre el enlace en una nueva ventana o pestaña
+        window.open(linkWhatsApp);
+      };
+      
 
     return(
         <div className="pagar-todo">
@@ -57,6 +73,7 @@ const Pagar = ()=>{
             {success ? ( <>
             <h2>su orden se genero exitosamente</h2>
             <p> Su codigo de segimiento es: {success}</p>
+            <button onClick={sendWhatsAppMessage}>confirmar al WHATSAPP</button>
             </>):
               (
                 <form onSubmit={submitData}>

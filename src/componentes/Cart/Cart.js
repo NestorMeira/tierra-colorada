@@ -6,9 +6,10 @@ import RemoveShoppingCartOutlinedIcon from '@mui/icons-material/RemoveShoppingCa
 
 
 
-function Cart(){
 
-    const { cartPro, clear} = useContext(CartContext);
+const Cart=()=>{
+
+    const { cartPro, clear,totalCompra} = useContext(CartContext);
    
     const hCartI = ()=>{
         clear();
@@ -25,6 +26,7 @@ function Cart(){
     return(
         <div className="app">
         <CartItem cartPro={cartPro}></CartItem>
+         <h3>Total de la compra : {totalCompra}</h3>
         <button onClick={hCartI} className="vaciar"> <RemoveShoppingCartOutlinedIcon className="vaciar-icono"/> Vaciar carrito</button>
         <Pagar/>
        
