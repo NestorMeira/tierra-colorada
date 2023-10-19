@@ -25,8 +25,10 @@ function CartShow ({data}) {
         <div className='app'>
             <img src={`/assets/${data.image}`} alt="imagen" />
             <h1>{data.titulo}</h1>
-            <h2>cantidad: {data.qty }</h2>
+            <h2>cantidad: {data.qty }</h2><br/>
+            <h4>Medida : {data.medida}</h4><br/>
             <h3>${data.precio}</h3>
+            
         
             <button onClick={hRemov}><DeleteOutlineIcon className='delete'/></button>
         </div>

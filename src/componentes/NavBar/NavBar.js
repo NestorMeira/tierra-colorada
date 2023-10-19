@@ -22,15 +22,11 @@ function Navbar() {
         </div>
         <div className='nav-superior'>
         <Link to="/" className='linea'><li onClick={handleClick}>inicio</li></Link>
-        <Link to="/contacto" className='linea'><li onClick={handleClick}>contacto</li></Link>
+      
         <CartWidget/>
       </div>
       <Link to="/"> <img src="/assets/logo.png" alt="logo" className="logo"/></Link>
-        <ul>
-    <Link to='/category/remerahombre' className='linea'><li onClick={handleClick}><button>Hombre</button></li></Link>
-    <Link to='/category/remeramujer' className='linea'><li onClick={handleClick}><button>Mujer</button></li></Link>
-    <Link to="/" className='linea'><li onClick={handleClick}><button>Todos</button></li></Link>
-       </ul>
+        
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
@@ -61,13 +57,13 @@ justify-content: space-between;
  }
 }
  .logo{
-  width: 23%;
-  margin:-15px 0 10px 10px;
+  width: 70%;
+  margin:0 0 10px 10px;
  }
  .nav-superior{
   display:flex;
   justify-content:flex-start;
-  margin:20px 0 -30px 30px;
+  margin:20px 0 0 30px;
   li{
   color: rgba(250, 76, 52, 1);
   font-size:25px

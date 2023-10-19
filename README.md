@@ -1,7 +1,7 @@
 # Remeras
 
-Este es mi primer proyecto hecho con ReactJs, en el curso de CoderHouse,el mismo fue creado con Create React App.Esta tienda permite al cliente mostrar sus productos (remeras para materos y mas...) y realizar las órdenes de compras con sus respectivas cantidades.
-Se utiliza una SPA, creada con ReactJS, en cuanto a al backend está realizada en Firebase, donde se encuentra alojada la base de datos de Productos.
+Este proyecto está hecho con ReactJs, el mismo fue creado con Create React App.Esta tienda permite al cliente mostrar sus productos  y realizar las órdenes de compras con sus respectivas cantidades.
+Se utiliza una SPA, creada con ReactJS, en cuanto a al backend está realizada en Firebase, donde se encuentra alojada la base de datos de los Productos.
 
 
 ## Instalación
