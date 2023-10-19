@@ -1,0 +1,28 @@
+header{  display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    img{
+     
+       width: 50%;
+      }
+      .redes{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        width: 100%;
+        height:40px;
+        background: black;
+        .icono-redes{
+        color: rgba(250, 76, 52, 1);
+        margin:1%;
+        font-size:28px;
+        }
+       }
+      li{
+        font-size: 2rem;
+        width: 80%;
+        color: rgba(250, 76, 52, 1);
+        margin-right: 0.5rem;
+      }
+}

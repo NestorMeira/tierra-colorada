@@ -1,0 +1,40 @@
+.nav-superior{
+    display: flex;
+    flex-flow: row;
+   
+}
+.categorias{
+    display: flex;
+   flex-flow: column wrap;
+   width: 230px;
+   border-radius: 3px;
+   margin: 5px -55% 10px 40%;
+  
+}
+.inicio{
+    font-size: 1.5rem;
+    background: rgba(235, 41, 15, 0.86);
+    color: aliceblue;
+    border: 1px solid rgba(255, 0, 0, 0.619) ;
+    border-radius:10px ;
+    margin-left: 100%;
+    margin-right: -100px;
+}
+.rutas{ 
+     width: 250px;
+    h2{
+     color: rgba(219, 66, 66, 0.903);
+     font-size: 18px;
+     margin: 19px 10px 0 auto;
+    }
+
+ul::-webkit-scrollbar{
+    background: transparent;
+   }
+   ul::-webkit-scrollbar-thumb{
+    background: rgba(207, 41, 41, 0.854);
+    border-radius: 10px ;
+    
+   }
+   
+}

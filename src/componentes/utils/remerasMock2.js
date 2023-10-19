@@ -131,22 +131,14 @@ const products2= [
         id:20,
         categoria:"portaretrato",
         medida:[
-            {nombre:"3cm x 7cm 'v'",precio:380}
+            {nombre:"3cm x 7cm 'v'",precio:380},
+            {nombre:" 9cm x 6cm 'v'", precio:500},
         ],
         image:'20.png' ,
         stock: 99,
         titulo:"portaretrato"
     },
-    {
-        id:21,
-        categoria:"portaretrato",
-        medida:[
-            {nombre:" 9cm x 6cm 'v'", precio:500}
-        ],
-        image:'20.png' ,
-        stock: 99,
-        titulo:"portaretrato"
-    },
+   
     {
         id:22,
         categoria:"portaretrato",
@@ -421,7 +413,7 @@ const products2= [
     },
     {
         id:58,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"23cm x 11cm ",precio:1500}
         ],     
@@ -431,7 +423,7 @@ const products2= [
     },
     {
         id:59,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"33cm x 16cm ",precio:1380}
         ],     
@@ -441,7 +433,7 @@ const products2= [
     },
     {
         id:60,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"24cm x 11cm ",precio:1060}
         ],     
@@ -452,7 +444,7 @@ const products2= [
     },
     {
         id:61,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"25cm x 10cm ",precio:1060}
         ],     
@@ -462,7 +454,7 @@ const products2= [
     },
     {
         id:62,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"26cm x 11cm ",precio:1130}
         ],     
@@ -472,7 +464,7 @@ const products2= [
     },
     {
         id:63,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"20cm x 9cm ",precio:1000}
         ],     
@@ -482,7 +474,7 @@ const products2= [
     },
     {
         id:64,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"24cm x 19cm "}
         ],     
@@ -493,7 +485,7 @@ const products2= [
     },
     {
         id:65,
-        categoria:"porta llave",
+        categoria:"porta_llave",
         medida:[
             {nombre:"25cm x 17cm ",precio:1250},
             {nombre:"25cm x 17cm ",precio:1250},
