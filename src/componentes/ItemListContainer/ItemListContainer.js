@@ -2,7 +2,7 @@
 import ItemList from '../ItemList/ItemList';
 import React ,{ useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import products2 from '../utils/remerasMock2';
+import products2 from '../utils/Mdf';
 
 
 const ItemListContainer = ()=>{

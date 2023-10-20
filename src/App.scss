@@ -8,17 +8,23 @@
 .icono-carrito{
   display: inline-flexbox;
   width:auto;
-  margin: 1px 0 0 20%;
+  margin: -7px 0 -10px 15%;
   button{
     background: white;
     border: none;
     color: rgba(250, 76, 52, 1);
     font-size: 26px;
+    &:hover{
+      color: rgb(255, 162, 105);
+    }
 
     .carrito{
-      font-size: 38px;
-      color: rgba(250, 76, 52, 1);
+      font-size: 2rem;
+      color: rgba(240, 57, 33, 0.907);
       margin-bottom: -10px;
+      &:hover{
+        color: rgb(255, 162, 105);
+      }
     }
   }
 }
@@ -36,7 +42,7 @@
   }
   h3{
     color: rgba(250, 76, 52, 1);
-    font-size: 32px;
+    font-size: 30px;
     margin: 0px 10px;
   }
 }
@@ -90,22 +96,33 @@
 
 
 
-@media screen and (max-width:1021px){
-  .icono-carrito{
-    margin: 1px 0 0 60%;
-  }
-    
-}
+
 
 @media screen and (max-width:767px){
   .icono-carrito{
-    margin: 1px 0 0 55%;
+    margin-top: 0px;
+    button{
+
+    .carrito{
+
+      font-size: 33px;
+      margin-bottom: -10px;
+    }
+  }
   }
 }
 
 @media screen and (max-width:426px){
   .icono-carrito{
-    margin: 1px 0 0 29%;
+    margin: 1px 0 0 10%;
+    button{
+      font-size: 22px;
+      .carrito{
+  
+        font-size: 27px;
+        margin-bottom: -10px;
+      }
+    }
   }
   .noHayProductos{
     color: rgb(255, 255, 255);
@@ -120,7 +137,7 @@
 }
 @media screen and (max-width:388px){
   .icono-carrito{
-    margin: 1px 0 0 18%;
+    margin: 1px 0 0 8%;
     button{
     font-size: 18px;
  

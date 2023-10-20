@@ -4,17 +4,16 @@ import { useContext,useState } from 'react';
 import Modal from '../Modal/Modal'
 import Cart from '../Cart/Cart';
 
-
-
-
 const CartWidget = ()=>{
     const [showModal, setShowModal] = useState(false)
     const {cartPro} =useContext(CartContext);
     const cantidad= cartPro.length
+ 
     return(
         <div className='icono-carrito'>
          <button onClick={() =>setShowModal(true)}>
-         {cantidad}<ShoppingCartOutlinedIcon className='carrito'/>
+       
+         {cantidad > 0 ? cantidad: null}  <ShoppingCartOutlinedIcon className='carrito'/>
          </button>
          { showModal &&
             <Modal close={()=>setShowModal()}>

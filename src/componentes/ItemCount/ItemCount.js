@@ -20,9 +20,7 @@ const removeContador = ()=>{
     }
 }
 
-const onClick = (e) => {
-    console.log(e);
-}
+
 
 
     

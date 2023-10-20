@@ -37,7 +37,9 @@
     right: 0px;
 }
 .close{
-    margin-left: 92%;
+    margin-left: 58%;
+    position: fixed;
+    cursor: pointer;
    
 }
 input[type=text], [type=number], [type=email] {

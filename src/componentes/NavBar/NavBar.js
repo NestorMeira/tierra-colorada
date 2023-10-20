@@ -16,9 +16,9 @@ const Navbar = () => {
     <div className='nav-superior'>
       <Link to="/" className='linea'><button className='inicio'>inicio</button></Link>
       <div className="categorias">
-        <h3>Productos</h3>
+
           <select className='linea' onChange={handleCategoryChange}>
-            <option value="/">Todos</option>
+            <option className='option' value="/">Productos</option>
             <option value="/categoria/cajita">Cajitas</option>
             <option value="/categoria/portaretrato">Portaretratos</option>
             <option value="/categoria/bandeja">Bandejas</option>

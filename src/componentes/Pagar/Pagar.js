@@ -3,7 +3,7 @@ import db from '../../firebaseConfig.js'
 import { collection, addDoc } from 'firebase/firestore'
 import { useState,useContext } from 'react'
 import { CartContext } from '../../Context/CartContext'
-
+import '../CartShow/CartShow.scss'
 const Pagar = ()=>{
 
     const [showModal, setShowModal] = useState(false)
@@ -36,8 +36,7 @@ const Pagar = ()=>{
                 id: product.id,
                 titulo: product.titulo,
                 precio: product.precio,
-                image:product.image,
-               category:product.category,
+               categoria:product.category,
             }
 
         } ),
@@ -67,7 +66,7 @@ const Pagar = ()=>{
     return(
         <div className="pagar-todo">
                   
-            <button onClick={() => setShowModal(true)} className="pagar">Ir a pagar</button>
+            <button onClick={() => setShowModal(true)} className="pagar">Comprar</button>
             { showModal &&
             <Modal title="datos de contacto" close={()=>setShowModal()}> 
             {success ? ( <>
@@ -80,7 +79,7 @@ const Pagar = ()=>{
                  <input 
                     type='text' 
                     name='name' 
-                    placeholder='Nombre'
+                    placeholder='Nombre y Apellido'
                     onChange={handleChange}
                     value={formData.name}
                     />

@@ -1,40 +1,74 @@
 .nav-superior{
     display: flex;
     flex-flow: row;
+    margin-top: 4%;
+    margin-bottom: 6%;
    
 }
 .categorias{
-    display: flex;
-   flex-flow: column wrap;
-   width: 230px;
+  
+   text-align: center;
    border-radius: 3px;
-   margin: 5px -55% 10px 40%;
+   margin-left:45%;
+   position: relative;
+   select{
+    color:rgba(226, 13, 13, 0.735);
+    font-size:1.3rem;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.139);
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(226, 13, 13, 0.735);
+    transition: all .6s  ;
+    &:hover{
+        font-size: 1.4rem;
+       }
+   }
   
 }
 .inicio{
-    font-size: 1.5rem;
-    background: rgba(235, 41, 15, 0.86);
-    color: aliceblue;
-    border: 1px solid rgba(255, 0, 0, 0.619) ;
-    border-radius:10px ;
-    margin-left: 100%;
-    margin-right: -100px;
-}
-.rutas{ 
-     width: 250px;
-    h2{
-     color: rgba(219, 66, 66, 0.903);
-     font-size: 18px;
-     margin: 19px 10px 0 auto;
-    }
-
-ul::-webkit-scrollbar{
+    color:rgba(226, 13, 13, 0.735);
+    font-size:1.5rem;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.139);
+    border: none;
     background: transparent;
+    border-bottom: 1px solid rgba(226, 13, 13, 0.735);
+   margin-left: 35%; 
+   position: absolute;
+   transition: all .6s  ;
+   &:hover{
+    font-size: 1.6rem;
    }
-   ul::-webkit-scrollbar-thumb{
-    background: rgba(207, 41, 41, 0.854);
-    border-radius: 10px ;
+}
+
+@media (max-width:700px){
+   .nav-superior{
+
+    .inicio{
+        margin-left: 28%;
+    }
+}
+  }
+
+  @media (max-width:489px){
+    .nav-superior{
+        .categorias{
+            margin-left: 32%;
+        }
+     .inicio{
+         margin-left: 15%;
+     }
+ }
+    
+   }
+   @media (max-width:419px){
+    .nav-superior{
+        .categorias{
+            margin-left: 32%;
+        }
+     .inicio{
+         margin-left: 12%;
+     }
+ }
     
    }
    
-}

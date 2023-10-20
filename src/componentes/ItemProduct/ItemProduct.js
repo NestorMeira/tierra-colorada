@@ -17,6 +17,7 @@ const ItemProduct = ({ data }) => {
   };
 
   const onAdd = (contador) => {
+    // Crear un nuevo producto con la medida seleccionada
     const itemToAdd = {
       id,
       titulo,
@@ -33,10 +34,10 @@ const ItemProduct = ({ data }) => {
       <div className="lista-productos">
         <img src={`/assets/${image}`} alt="Imagen producto" className="remera1" />
         <div className="descripcion">
-          <h6>cod.{id}</h6>
+          <h5>cod.{id}</h5>
           <p>{titulo}</p>
-          <div className="talle">
-            <label>Medida:</label>
+          <div className="medida">
+            <label>Medida: </label>
             <select value={selectedMedida} onChange={(e) => onMedidaChange(e.target.value)}>
               {medida.map((medidaOption) => (
                 <option key={medidaOption.nombre} value={medidaOption.nombre}>

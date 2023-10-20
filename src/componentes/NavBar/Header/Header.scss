@@ -1,28 +1,74 @@
-header{  display: flex;
+header{  
+    display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    animation-name: mianimacion;
+    animation-duration: 5s; 
+  @keyframes mianimacion {
+    0% {
+      background-image: #b37979; }
+    50% {
+      background: #cf6161d0; }
+    70% {
+      background: white; }
+    100% {
+      background: rgba(228, 99, 82, 0.813); } }
     img{
      
-       width: 50%;
+       width: 60%;
+       margin-top: 4%;
+       margin-bottom: 3%;
       }
       .redes{
         display:flex;
         justify-content:flex-end;
         align-items:center;
         width: 100%;
-        height:40px;
+        height:50px;
         background: black;
+      a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2%;
+        font-size: 0.8rem;
+        list-style-type: none;
+        color: aliceblue;
+        &:hover{
+          color: rgba(239, 37, 18, 0.909);
+        }
+        width: 300px;
         .icono-redes{
-        color: rgba(250, 76, 52, 1);
+        color: rgba(239, 37, 18, 0.909);
         margin:1%;
         font-size:28px;
+        &:hover{
+          color: aliceblue;
         }
+   
+        }
+    }
        }
-      li{
-        font-size: 2rem;
-        width: 80%;
-        color: rgba(250, 76, 52, 1);
-        margin-right: 0.5rem;
+     
+}
+
+@media (max-width:490px){
+  header{
+    img{
+      width: 90%;
+    }
+    .redes{
+      a{
+        font-size: 0.7rem;
+        justify-content: flex-end;
+       margin-top: 4%;
+       font-weight: normal;
+      .icono-redes{
+        font-size: 1.5rem;
       }
+    }
+    }
+  }
 }

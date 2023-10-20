@@ -1,39 +1,33 @@
-import { CartContext } from '../../Context/CartContext'
-import { useContext } from 'react'
-import './CartShow.scss'
-
-
+import React, { useContext } from 'react';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import { CartContext } from '../../Context/CartContext';
+import './CartShow.scss'
+function CartShow({ data }) {
+  const { addRemera, removeRemera, isInCart } = useContext(CartContext);
 
-
-
-
-function CartShow ({data}) {
- 
-    const {removeRemera,} =useContext(CartContext);
-       
-   
-   const hRemov = () =>{
-        removeRemera(data.id)
+  const hAddToCart = () => {
+    if (!isInCart(data)) {
+      addRemera(data, 1);
     }
+  };
 
+  const hRemoveFromCart = () => {
+    removeRemera(data.id);
+  };
 
-
-
-    return(
-        <>
-        <div className='app'>
-            <img src={`/assets/${data.image}`} alt="imagen" />
-            <h1>{data.titulo}</h1>
-            <h2>cantidad: {data.qty }</h2><br/>
-            <h4>Medida : {data.medida}</h4><br/>
-            <h3>${data.precio}</h3>
-            
-        
-            <button onClick={hRemov}><DeleteOutlineIcon className='delete'/></button>
-        </div>
-        </>
-    );
+  return (
+    <div className='contenedor'>
+      <img src={`/assets/${data.image}`} alt='imagen' />
+      <div className='hijo'>
+        <h2>{data.titulo}</h2>
+        <h>cantidad: {data.qty}</h><br />
+        <h3>Medida : {data.medida}</h3><br />
+        <h3>${data.precio}</h3>
+        <button onClick={hRemoveFromCart}><DeleteOutlineIcon className='delete' /></button>
+       
+      </div>
+    </div>
+  );
 }
-  
-export default CartShow
+
+export default CartShow;

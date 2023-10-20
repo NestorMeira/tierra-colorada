@@ -294,8 +294,8 @@ const products2= [
         id:45,
         categoria:"cajonera",
         medida:[
-            {nombre:"12cm ancho, 6cm prof. 18cm alto",precio:3880},
-            {nombre:"18cm ancho, 14cm prof. 22cm alto",  precio:4880},
+            {nombre:"12cm x 6cm x 18cm",precio:3880},
+            {nombre:"18cm x 14cm x 22cm",  precio:4880},
         ],
         image:'34.png' ,
         stock: 99,
@@ -305,7 +305,7 @@ const products2= [
         id:47,
         categoria:"cajonera",
         medida:[
-            {nombre:"8cm ancho, 15cm prof. 8cm alto",precio:1630}
+            {nombre:"8cm x 15cm x 8cm",precio:1630}
         ],
         image:'31.png' ,
         stock: 99,
@@ -315,7 +315,7 @@ const products2= [
         id:48,
         categoria:"cajonera",
         medida:[
-            {nombre:"33cm largo, 10cm prof. 15cm alto",precio:3880}
+            {nombre:"33cm x 10cm x 15cm",precio:3880}
         ],
         image:'32.png' ,
         stock: 99,
@@ -325,7 +325,7 @@ const products2= [
         id:49,
         categoria:"cajonera",
         medida:[
-            {nombre:"22cm largo, 10cm prof.15cm alto ", precio:2650}
+            {nombre:"22cm x 10cm x 15cm", precio:2650}
         ],
         image:'33.png' ,
         stock: 99,
@@ -335,7 +335,7 @@ const products2= [
         id:50,
         categoria:"cajonera",
         medida:[
-            {nombre:"33cm largo, 10cm prof. 15cm alto ",precio:3630}
+            {nombre:"33cm x 10cm x 15cm",precio:3630}
         ],    
         image:'35.png' ,
         stock: 99,
@@ -345,7 +345,7 @@ const products2= [
         id:51,
         categoria:"cajonera",
         medida:[
-            {nombre:"33cm largo, 10cm prof. 15cm alto",precio:3630}
+            {nombre:"33cm x 10c x 15cm",precio:3630}
         ],    
         image:'28.png' ,
         stock: 99,
@@ -355,7 +355,7 @@ const products2= [
         id:52,
         categoria:"cajonera",
         medida:[
-            {nombre:"14cm alto, 14cm prof.17cm ancho",precio:3250}
+            {nombre:"14cm x 14cm x 17cm",precio:3250}
         ],     
         image:'70.png' ,
         stock: 99,
@@ -365,7 +365,7 @@ const products2= [
         id:53,
         categoria:"espejo",
         medida:[
-            {nombre:"42cm alto x 23cm ancho",precio:5130}
+            {nombre:"42cm x 23cm",precio:5130}
         ],     
         image:'30.png' ,
         stock: 99,
@@ -375,7 +375,7 @@ const products2= [
         id:54,
         categoria:"espejo",
         medida:[
-            {nombre:"22cm alto x 17cm ancho",precio:1750}
+            {nombre:"22cm x 17cm",precio:1750}
         ],     
         image:'29.png' ,
         stock: 99,

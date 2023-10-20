@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
 import './Header.scss'
 
 const Header = () => {
   return (
     <header>
          <div className='redes'>
-        <FacebookIcon className='icono-redes'/><InstagramIcon className='icono-redes'/>
+       <a href='https://www.instagram.com/artesania_tierracolorada/'target="_blank">Seguinos en Instagram <InstagramIcon className='icono-redes'/></a>
         </div>
         <img src="/assets/logo.png" alt="logo"/>
 
