@@ -3,20 +3,20 @@ header{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    animation-name: mianimacion;
-    animation-duration: 5s; 
-  @keyframes mianimacion {
-    0% {
-      background-image: #b37979; }
-    50% {
-      background: #cf6161d0; }
-    70% {
-      background: white; }
-    100% {
-      background: rgba(228, 99, 82, 0.813); } }
+  //   animation-name: mianimacion;
+  //   animation-duration: 5s; 
+  // @keyframes mianimacion {
+  //   0% {
+  //     background-image: #b37979; }
+  //   50% {
+  //     background: #cf6161d0; }
+  //   70% {
+  //     background: white; }
+  //   100% {
+  //     background: rgba(228, 99, 82, 0.813); } }
     img{
      
-       width: 60%;
+       width: 100%;
        margin-top: 4%;
        margin-bottom: 3%;
       }
@@ -57,7 +57,7 @@ header{
 @media (max-width:490px){
   header{
     img{
-      width: 90%;
+      width: 100%;
     }
     .redes{
       a{

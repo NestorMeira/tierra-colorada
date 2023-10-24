@@ -12,26 +12,28 @@
    margin-left:45%;
    position: relative;
    select{
-    color:rgba(226, 13, 13, 0.735);
-    font-size:1.3rem;
+    color:#DD1700;
+    font-size:1.4rem;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.139);
     border: none;
     background: transparent;
-    border-bottom: 1px solid rgba(226, 13, 13, 0.735);
+    border-bottom: 1px solid #DD1700;
     transition: all .6s  ;
+ 
+    
     &:hover{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
        }
    }
   
 }
 .inicio{
-    color:rgba(226, 13, 13, 0.735);
+    color:#DD1700;
     font-size:1.5rem;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.139);
     border: none;
     background: transparent;
-    border-bottom: 1px solid rgba(226, 13, 13, 0.735);
+    border-bottom: 1px solid #DD1700;
    margin-left: 35%; 
    position: absolute;
    transition: all .6s  ;

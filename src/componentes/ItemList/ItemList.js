@@ -8,7 +8,7 @@ const ItemList = ({dataProducts})=> {
      {dataProducts.map( (product2) => {    
                 return (
                     <>
-                        <ItemProduct  data={product2}/>
+                           <ItemProduct key={product2.id} data={product2} />
                     </>
                 )
             })}

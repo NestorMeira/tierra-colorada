@@ -1,7 +1,10 @@
-import './ItemProduct.scss';
-import ItemCount from '../ItemCount/ItemCount';
 import { useState, useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
+import ItemCount from '../ItemCount/ItemCount';
+import Swal from 'sweetalert2';
+
+import './ItemProduct.scss'
+
 
 const ItemProduct = ({ data }) => {
   const { titulo, image, precio, id, medida } = data;
@@ -17,16 +20,23 @@ const ItemProduct = ({ data }) => {
   };
 
   const onAdd = (contador) => {
-    // Crear un nuevo producto con la medida seleccionada
-    const itemToAdd = {
-      id,
-      titulo,
-      image,
-      medida: selectedMedida,
-      precio: selectedPrecio,
-      stock: data.stock,
-    };
-    addRemera(itemToAdd, contador);
+    if (selectedMedida === medida[0].nombre) {
+     
+      Swal.fire({
+        title: 'Selecciona una medida',
+        icon: 'error',
+      });
+    } else {
+      const itemToAdd = {
+        id,
+        titulo,
+        image,
+        medida: selectedMedida,
+        precio: selectedPrecio,
+        stock: data.stock,
+      };
+      addRemera(itemToAdd, contador);
+    }
   };
 
   return (
@@ -34,10 +44,10 @@ const ItemProduct = ({ data }) => {
       <div className="lista-productos">
         <img src={`/assets/${image}`} alt="Imagen producto" className="remera1" />
         <div className="descripcion">
-          <h5>cod.{id}</h5>
+          <h6>cod.{id}</h6>
           <p>{titulo}</p>
           <div className="medida">
-            <label>Medida: </label>
+           
             <select value={selectedMedida} onChange={(e) => onMedidaChange(e.target.value)}>
               {medida.map((medidaOption) => (
                 <option key={medidaOption.nombre} value={medidaOption.nombre}>

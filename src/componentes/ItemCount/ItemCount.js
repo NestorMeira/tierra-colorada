@@ -29,9 +29,9 @@ return(
     <>
         <div className="count-produc">
             <h3>Cantidad</h3>
-            <button onClick={removeContador}>-</button>
+            <button className='cantidad' onClick={removeContador}>-</button>
             <span>{contador}</span>
-            <button onClick={addContador}>+</button>  
+            <button className='cantidad'onClick={addContador}>+</button>  
             </div>
             <div className='agregar'>
             <button onClick={() =>{

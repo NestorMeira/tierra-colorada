@@ -3,9 +3,13 @@ import db from '../../firebaseConfig.js'
 import { collection, addDoc } from 'firebase/firestore'
 import { useState,useContext } from 'react'
 import { CartContext } from '../../Context/CartContext'
-import '../CartShow/CartShow.scss'
-const Pagar = ()=>{
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
+
+
+const Pagar = () => {
+ 
     const [showModal, setShowModal] = useState(false)
     const [success, setSuccess] = useState()
     const {cartPro,totalCompra} =useContext(CartContext);
@@ -33,12 +37,12 @@ const Pagar = ()=>{
     const [order, setOrder] = useState({
         items: cartPro.map((product) => {
             return {
-                id: product.id,
+                codigo: product.id,
+                medida:product.medida,
                 titulo: product.titulo,
                 precio: product.precio,
-               categoria:product.category,
+                cantidad: product.qty
             }
-
         } ),
         buyer: {},
         date: new Date().toLocaleString(),
@@ -46,65 +50,58 @@ const Pagar = ()=>{
     })
     const [formData, setFormData] = useState({
         name: '',
-        phone: '',
-        email:''
+        phone: ''
     })
 
-
-
     const sendWhatsAppMessage = () => {
-        const numero = '+543751606367';  
-        const mensaje = 'Hola, he realizado un pedido.';
-   
+        const numero = '+543751606367';
+        const mensaje = `Hola, he realizado un pedido. Mi código de seguimiento es: ${success}`;
+    
         const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
-      
-        // Abre el enlace en una nueva ventana o pestaña
+    
+     
+        
         window.open(linkWhatsApp);
-      };
-      
+    };
+    
 
-    return(
+    return (
         <div className="pagar-todo">
-                  
-            <button onClick={() => setShowModal(true)} className="pagar">Comprar</button>
-            { showModal &&
-            <Modal title="datos de contacto" close={()=>setShowModal()}> 
-            {success ? ( <>
-            <h2>su orden se genero exitosamente</h2>
-            <p> Su codigo de segimiento es: {success}</p>
-            <button onClick={sendWhatsAppMessage}>confirmar al WHATSAPP</button>
-            </>):
-              (
-                <form onSubmit={submitData}>
-                 <input 
-                    type='text' 
-                    name='name' 
-                    placeholder='Nombre y Apellido'
-                    onChange={handleChange}
-                    value={formData.name}
-                    />
-                 <input 
-                    type='number' 
-                    name='phone'  
-                    placeholder='Telefono'                   
-                    value={formData.phone}
-                    onChange={handleChange}
-                    />
-                 <input 
-                    type='email' 
-                    name='email'  
-                    placeholder='Email'
-                    value={formData.email}  
-                    onChange={handleChange}
-                    />
-                    
-                    <button type='submit'>Enviar</button>
-                </form>
-                )}
-            </Modal>
-            }
+            <button onClick={() => setShowModal(true)} className="pagar">
+                Comprar
+            </button>
+            {showModal && (
+                <Modal title="datos de contacto" close={() => setShowModal()}>
+                    {success ? (
+                        <>
+                            <h2>Sus datos se cargaron exitosamente.</h2>
+                           <h3><ArrowDownwardIcon className='flecha'/>Para finalizar confirme su compra al whatsapp <ArrowDownwardIcon className='flecha'/></h3>
+                           
+                            <button className='wpp' onClick={sendWhatsAppMessage}> <WhatsAppIcon className='icom-wpp'/> Confirmar </button>
+                        </>
+                    ) : (
+                        <form onSubmit={submitData}>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Nombre y Apellido"
+                                onChange={handleChange}
+                                value={formData.name}
+                            />
+                            <input
+                                type="number"
+                                name="phone"
+                                placeholder="Teléfono"
+                                value={formData.phone}
+                                onChange={handleChange}
+                            />
+                            <button type="submit">Enviar</button>
+                        </form>
+                    )}
+                </Modal>
+            )}
         </div>
-    )
-}
+    );
+};
 
-export default Pagar
+export default Pagar;

@@ -11,14 +11,16 @@ function CartShow({ data }) {
     }
   };
 
-  const hRemoveFromCart = () => {
-    removeRemera(data.id);
-  };
+// En CartShow.js
+const hRemoveFromCart = () => {
+  removeRemera(data.id, data.medida);
+};
 
   return (
     <div className='contenedor'>
       <img src={`/assets/${data.image}`} alt='imagen' />
       <div className='hijo'>
+        
         <h2>{data.titulo}</h2>
         <h>cantidad: {data.qty}</h><br />
         <h3>Medida : {data.medida}</h3><br />

@@ -10,7 +10,7 @@ const CartProvider = ({ children }) => {
   const getRemeraId = (id, medida) => cartPro.find((e) => e.id === id && e.medida === medida) || null;
 
   const addRemera = (newRemera, qty) => {
-    const remera = getRemeraId(newRemera.id, newRemera.medida);
+    const remera = getRemeraId(newRemera.id, newRemera.medida,newRemera.categoria);
 
     if (!remera) {
       newRemera.qty = qty;
@@ -29,10 +29,12 @@ const CartProvider = ({ children }) => {
     return true;
   };
 
-  const removeRemera = (id, medida) => {
-    const result = cartPro.filter((el) => el.id !== parseInt(id) || el.medida !== medida);
-    setCartPro(result);
-  };
+// En CartContext.js
+const removeRemera = (id, medida) => {
+  const updatedCart = cartPro.filter((remera) => remera.id !== id || remera.medida !== medida);
+  setCartPro(updatedCart);
+};
+
 
   const clear = () => {
     setCartPro([]);
@@ -62,6 +64,7 @@ const CartProvider = ({ children }) => {
   return (
     <CartContext.Provider
       value={{
+        
         cartPro,
         totalCompra:  precioTotal,
         totalPro,
