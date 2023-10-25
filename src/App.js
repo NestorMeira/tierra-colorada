@@ -20,7 +20,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/categoria/:categoryId' element={<ItemListContainer/>}/>    
       <Route path='/cart' element={<Cart/>}/>
-      <Route path='*' element={<h1>ERROR 404 -página no encontrada</h1>}/>
+      <Route path='*' element={<h1>ERROR 404 -página no encontrada</h1>}  title="Página no encontrada"/>
      </Routes> 
      <Footer />
     </BrowserRouter>

@@ -4,7 +4,6 @@ import React ,{ useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import products2 from '../utils/Mdf';
 
-
 const ItemListContainer = ()=>{
 
   const { categoryId } =useParams();
@@ -41,10 +40,9 @@ useEffect( () =>{
 
 
 
-
     return(
         <>
-        
+
         <div className="lista-productos">
             <ItemList dataProducts={listProducts}/>
         </div>

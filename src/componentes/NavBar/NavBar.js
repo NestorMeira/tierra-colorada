@@ -9,12 +9,26 @@ const Navbar = () => {
 
   const handleCategoryChange = (event) => {
     const selectedCategory = event.target.value;
-    navigate(selectedCategory); // Cambio aquí
+    navigate(selectedCategory);
+    scrollToTop(); // Cambio aquí
   };
 
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 200,
+      behavior: 'smooth',
+      
+    })};
+    
+
+
+
   return (
-    <div className='nav-superior'>
-      <Link to="/" className='linea'><button className='inicio'>Inicio</button></Link>
+    <nav className='nav-superior'>
+      <Link to="/" className='linea'>
+        <button className='inicio' onClick={scrollToTop}>Inicio</button>
+        </Link>
       <div className="categorias">
 
           <select className='linea' onChange={handleCategoryChange}>
@@ -37,7 +51,7 @@ const Navbar = () => {
           </select>
       </div>
       <CartWidget />
-    </div>
+    </nav>
   );
 }
 

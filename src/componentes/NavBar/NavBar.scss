@@ -1,9 +1,14 @@
 .nav-superior{
     display: flex;
     flex-flow: row;
-    margin-top: 4%;
-    margin-bottom: 6%;
-   
+    margin-bottom: 3%;
+    padding-top: 2.5rem;
+    background-color: #fffffff1;
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0px; 
+    height: 80px;
+    
 }
 .categorias{
   
@@ -58,14 +63,18 @@
         }
      .inicio{
          margin-left: 15%;
+         
      }
  }
     
    }
    @media (max-width:419px){
     .nav-superior{
+       
+    background-color: #ffffffd8;
         .categorias{
             margin-left: 32%;
+         
         }
      .inicio{
          margin-left: 12%;

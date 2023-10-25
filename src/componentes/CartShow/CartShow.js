@@ -22,7 +22,7 @@ const hRemoveFromCart = () => {
       <div className='hijo'>
         
         <h2>{data.titulo}</h2>
-        <h>cantidad: {data.qty}</h><br />
+        <h3>cantidad: {data.qty}</h3><br />
         <h3>Medida : {data.medida}</h3><br />
         <h3>${data.precio}</h3>
         <button onClick={hRemoveFromCart}><DeleteOutlineIcon className='delete' /></button>

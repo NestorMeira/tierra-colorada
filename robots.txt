@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.artesaniastierracolorada.com.ar/sitemap.xml

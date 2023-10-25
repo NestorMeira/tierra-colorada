@@ -1,19 +1,22 @@
-import React from 'react'
-
+import React from 'react';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
-import './Header.scss'
+import './Header.scss';
 
 const Header = () => {
   return (
     <header>
-         <div className='redes'>
-       <a href='https://www.instagram.com/artesania_tierracolorada/'target="_blank">Seguinos en Instagram <InstagramIcon className='icono-redes'/></a>
-        </div>
-        <img src="/assets/logo.png" alt="logo"/>
-
+      <div className="redes">
+        <a
+          href="https://www.instagram.com/artesania_tierracolorada/"
+          target="_blank"
+          rel="noopener noreferrer" // Agregamos el atributo rel para seguridad
+          aria-label="Visitar nuestro perfil en Instagram"
+        > <InstagramIcon className="icono-redes" />
+        </a>
+      </div>
+      <img src="/assets/logo.png" alt="Logo de Artesanías Tierra Colorada" />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

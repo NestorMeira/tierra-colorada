@@ -4,7 +4,7 @@ const products2= [
         id:1,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas", precio:560 },
+            {nombre:"Medidas",},
             {nombre:"20cm x 12cm ", precio:560 },
         ],
         image:'1.png', 
@@ -15,7 +15,7 @@ const products2= [
         id:2,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas", precio:1000 },
+            {nombre:"Medidas", },
             {nombre:"27cm x 18cm", precio:1000 },
             {nombre:"35cm x 24cm", precio:1630},
             {nombre:"40cm x 30cm", precio:2130},
@@ -28,7 +28,7 @@ const products2= [
         id:5,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas", precio:880 },
+            {nombre:"Medidas",},
             {nombre:"20cm x 20cm", precio:880 },
             {nombre:"30cm x 20cm", precio:1200},
             {nombre:"25cm x 35cm", precio:1500},
@@ -41,7 +41,7 @@ const products2= [
         id:8,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas",precio:1300 },
+            {nombre:"Medidas",},
             {nombre:"18cm x 24cm ", precio:1300 },
         ],
         image:'16.png' ,
@@ -52,7 +52,7 @@ const products2= [
         id:9,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas",precio:2850 },
+            {nombre:"Medidas",},
             {nombre:"30cm x 50cm", precio:2850 },
         ],
         image:'14.png' ,
@@ -63,7 +63,7 @@ const products2= [
         id:10,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas",precio:2380 },
+            {nombre:"Medidas",},
             {nombre:"30cm x 30cm", precio:2380 },
         ],
         image:'19.png' ,
@@ -74,7 +74,7 @@ const products2= [
         id:11,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas", precio:750 },
+            {nombre:"Medidas",},
             {nombre:"14cm x 18cm", precio:750 },
         ],
         image:'26.png' ,
@@ -85,7 +85,7 @@ const products2= [
         id:12,
         categoria:"portaretrato",
         medida:[
-            {nombre:"Medidas", precio:560 },
+            {nombre:"Medidas",},
             {nombre:"10cm x 15cm 'v'",  precio:560 },
         ],
         image:'13.png',
@@ -96,7 +96,7 @@ const products2= [
         id:13,
         categoria:"portaretrato",
         medida:[
-            {nombre:"Medidas", precio:560 },
+            {nombre:"Medidas",},
             {nombre:"10cm x 15cm 'h'", precio:560 },
         ],
         image:'15.png' ,
@@ -107,7 +107,7 @@ const products2= [
         id:14,
         categoria:"portaretrato",
         medida:[
-            {nombre:"Medidas", precio:880 },
+            {nombre:"Medidas",},
             {nombre:"10cm x 15cm 'h'", precio:880 },
             {nombre:"18cm x 13cm 'h'",  precio:1130},
         ],
@@ -119,7 +119,7 @@ const products2= [
         id:16,
         categoria:"portaretrato",
         medida:[
-            {nombre:"Medidas", precio:750 },
+            {nombre:"Medidas",},
             {nombre:"10cm x 15cm 'v'", precio:750 },
             {nombre:"18cm x 13cm 'v'", precio:1060},
         ],
@@ -131,7 +131,7 @@ const products2= [
         id:18,
         categoria:"portaretrato",
         medida:[
-            {nombre:"Medidas", precio:800 },
+            {nombre:"Medidas",},
             {nombre:"10cm x 15cm 'h'", precio:800 },
             {nombre:"18cm x 13cm 'h'", precio:1060},
         ],
@@ -143,7 +143,7 @@ const products2= [
         id:20,
         categoria:"portaretrato",
         medida:[
-            {nombre:"Medidas", precio:380 },
+            {nombre:"Medidas",},
             {nombre:"3cm x 7cm 'v'", precio:380 },
             {nombre:" 9cm x 6cm 'v'",  precio:500},
         ],
@@ -156,7 +156,7 @@ const products2= [
         id:22,
         categoria:"portaretrato",
         medida:[
-            {nombre:"Medidas", precio:450 },
+            {nombre:"Medidas",},
             {nombre:" 4cm x 6cm 'v'", precio:450 },
         ],
         image:'24.png' ,
@@ -167,7 +167,7 @@ const products2= [
         id:23,
         categoria:"caja_de_te",
         medida:[
-            {nombre:"Medidas",precio:1940 },
+            {nombre:"Medidas",},
             {nombre:"28cm x 11cm", precio:1940 },
             {nombre:"19cm x 19cm", precio:1690},
         ],
@@ -180,7 +180,7 @@ const products2= [
         id:25,
         categoria:"caja_de_te",
         medida:[
-            {nombre:"Medidas",precio:2690 },
+            {nombre:"Medidas",},
             {nombre:"26cm x 19cm", precio:2690 },
             {nombre:"25cm x 25cm", precio:3450},
         ],
@@ -193,7 +193,7 @@ const products2= [
         id:27,
         categoria:"caja_de_te",
         medida:[
-            {nombre:"Medidas",precio:2130 },
+            {nombre:"Medidas",},
             {nombre:"19cm x 19cm ", precio:2130 },
             {nombre:"26cm x 19cm ", precio:2950},
             {nombre:"25cm x 25cm", precio:3690},
@@ -206,7 +206,7 @@ const products2= [
         id:30,
         categoria:"caja_de_te",
         medida:[
-            {nombre:"Medidas",precio:1130 },
+            {nombre:"Medidas",},
             {nombre:"20cm de alto", precio:1130 },
         ],
         image:'39.png' ,
@@ -217,7 +217,7 @@ const products2= [
         id:31,
         categoria:"caja_de_te",
         medida:[
-            {nombre:"Medidas",precio:3150 },
+            {nombre:"Medidas",},
             {nombre:"25cm de alto", precio:3150 },
         ],
         image:'40.png' ,
@@ -228,7 +228,7 @@ const products2= [
         id:32,
         categoria:"cajita",
         medida:[
-            {nombre:"Medidas",precio:1000 },
+            {nombre:"Medidas",},
             {nombre:"20cm x 14,5cm", precio:1000 },
             {nombre:"15cm x 11,5cm", precio:630},
             {nombre:"22cm x 30cm", precio:1300},
@@ -241,7 +241,7 @@ const products2= [
         id:35,
         categoria:"cajita",
         medida:[
-            {nombre:"Medidas", precio:560 },
+            {nombre:"Medidas",},
             { nombre:"11cm x 8cm", precio:560 },
         ],    
         image:'4.png',   
@@ -252,7 +252,7 @@ const products2= [
         id:36,
         categoria:"cajita",
         medida:[
-            {nombre:"Medidas", precio:750 },
+            {nombre:"Medidas",},
             {nombre:"15cm x 15cm", precio:750 },
         ],
         image:'25.png' ,
@@ -263,7 +263,7 @@ const products2= [
         id:37,
         categoria:"cajita",
         medida:[
-            {nombre:"Medidas",precio:1060 },
+            {nombre:"Medidas",},
             {nombre:"20cm x 15cm", precio:1060 },
         ],
         image:'22.png' ,
@@ -274,7 +274,7 @@ const products2= [
         id:38,
         categoria:"lapicero",
         medida:[
-            {nombre:"Medidas", precio:300 },
+            {nombre:"Medidas",},
             {nombre:"9cm alto", precio:300 },
             {nombre:"12cm alto", precio:750},
     ],
@@ -286,7 +286,7 @@ const products2= [
         id:40,
         categoria:"servilletero",
         medida:[
-            {nombre:"Medidas", precio:800 },
+            {nombre:"Medidas",},
             {nombre:"12cm alto", precio:800 },
       ],
        image:'48.png' ,
@@ -297,7 +297,7 @@ const products2= [
         id:41,
         categoria:"servilletero",
         medida:[
-            {nombre:"Medidas", precio:300 },
+            {nombre:"Medidas",},
             {nombre:"9cm de alto", precio:300 },
             {nombre:"12cm de alto", precio:750 },
         ],
@@ -309,7 +309,7 @@ const products2= [
         id:43,
         categoria:"servilletero",
         medida:[
-            {nombre:"Medidas", precio:300 },
+            {nombre:"Medidas",},
             {nombre:"9cm alto",  precio:300 },
             {nombre:"12cm alto", precio:750 },
      ],
@@ -321,7 +321,7 @@ const products2= [
         id:45,
         categoria:"cajonera",
         medida:[
-            {nombre:"Medidas",precio:3880 },
+            {nombre:"Medidas",},
             {nombre:"12cm x 6cm x 18cm", precio:3880 },
             {nombre:"18cm x 14cm x 22cm",   precio:4880},
         ],
@@ -333,7 +333,7 @@ const products2= [
         id:47,
         categoria:"cajonera",
         medida:[
-            {nombre:"Medidas",precio:1630 },
+            {nombre:"Medidas",},
             {nombre:"8cm x 15cm x 8cm", precio:1630 },
         ],
         image:'31.png' ,
@@ -344,7 +344,7 @@ const products2= [
         id:48,
         categoria:"cajonera",
         medida:[
-            {nombre:"Medidas",precio:3880 },
+            {nombre:"Medidas",},
             {nombre:"33cm x 10cm x 15cm", precio:3880 },
         ],
         image:'32.png' ,
@@ -355,7 +355,7 @@ const products2= [
         id:49,
         categoria:"cajonera",
         medida:[
-            {nombre:"Medidas",precio:2650 },
+            {nombre:"Medidas",},
             {nombre:"22cm x 10cm x 15cm",  precio:2650 },
         ],
         image:'33.png' ,
@@ -366,7 +366,7 @@ const products2= [
         id:50,
         categoria:"cajonera",
         medida:[
-            {nombre:"Medidas",precio:3630 },
+            {nombre:"Medidas",},
             {nombre:"33cm x 10cm x 15cm", precio:3630 },
         ],    
         image:'35.png' ,
@@ -377,7 +377,7 @@ const products2= [
         id:51,
         categoria:"cajonera",
         medida:[
-            {nombre:"Medidas",precio:3630 },
+            {nombre:"Medidas",},
             {nombre:"33cm x 10c x 15cm", precio:3630 },
         ],    
         image:'28.png' ,
@@ -388,7 +388,7 @@ const products2= [
         id:52,
         categoria:"cajonera",
         medida:[
-            {nombre:"Medidas",precio:3250 },
+            {nombre:"Medidas",},
             {nombre:"14cm x 14cm x 17cm", precio:3250 },
         ],     
         image:'70.png' ,
@@ -399,7 +399,7 @@ const products2= [
         id:53,
         categoria:"espejo",
         medida:[
-            {nombre:"Medidas",precio:5130 },
+            {nombre:"Medidas",},
             {nombre:"42cm x 23cm", precio:5130 },
         ],     
         image:'30.png' ,
@@ -410,7 +410,7 @@ const products2= [
         id:54,
         categoria:"espejo",
         medida:[
-            {nombre:"Medidas",precio:1750 },
+            {nombre:"Medidas",},
             {nombre:"22cm x 17cm", precio:1750 },
         ],     
         image:'29.png' ,
@@ -421,7 +421,7 @@ const products2= [
         id:55,
         categoria:"plantera",
         medida:[
-            {nombre:"Medidas", precio:800 },
+            {nombre:"Medidas",},
             {nombre:"10cm alto ", precio:800 },
         ],    
         image:'38.png' ,
@@ -432,7 +432,7 @@ const products2= [
         id:56,
         categoria:"plantera",
         medida:[
-            {nombre:"Medidas", precio:880 },
+            {nombre:"Medidas",},
             {nombre:"13cm x 11cm ", precio:880 },
         ],     
         image:'36.png' ,     
@@ -443,7 +443,7 @@ const products2= [
         id:57,
         categoria:"plantera",
         medida:[
-            {nombre:"Medidas", precio:940 },
+            {nombre:"Medidas",},
             {nombre:"19cm x 11cm ", precio:940 },
         ],     
         image:'37.png' ,
@@ -454,7 +454,7 @@ const products2= [
         id:58,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",precio:1500 },
+            {nombre:"Medidas",},
             {nombre:"23cm x 11cm ", precio:1500 },
         ],     
         image:'54.png' ,
@@ -465,7 +465,7 @@ const products2= [
         id:59,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",precio:1380 },
+            {nombre:"Medidas",},
             {nombre:"33cm x 16cm ", precio:1380 },
         ],     
         image:'53.png' , 
@@ -476,7 +476,7 @@ const products2= [
         id:60,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",precio:1060 },
+            {nombre:"Medidas",},
             {nombre:"24cm x 11cm ", precio:1060 },
         ],     
         image:'55.png' ,
@@ -488,7 +488,7 @@ const products2= [
         id:61,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",precio:1060 },
+            {nombre:"Medidas",},
             {nombre:"25cm x 10cm ", precio:1060 },
         ],     
         image:'52.png',
@@ -499,7 +499,7 @@ const products2= [
         id:62,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",precio:1130 },
+            {nombre:"Medidas",},
             {nombre:"26cm x 11cm ", precio:1130 },
         ],     
         image:'50.png',
@@ -510,7 +510,7 @@ const products2= [
         id:63,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",precio:1000 },
+            {nombre:"Medidas",},
             {nombre:"20cm x 9cm ", precio:1000 },
         ],     
         image:'49.png' ,
@@ -521,7 +521,7 @@ const products2= [
         id:64,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",recio:1750, },
+            {nombre:"Medidas",},
             {nombre:"24cm x 19cm ",  precio:1750, },
         ],     
         image:'41.png',
@@ -532,7 +532,7 @@ const products2= [
         id:65,
         categoria:"porta_llave",
         medida:[
-            {nombre:"Medidas",precio:1250 },
+            {nombre:"Medidas",},
             {nombre:"25cm x 17cm ", precio:1250 },
             {nombre:"25cm x 17cm ", precio:1250},
         ],     
@@ -544,7 +544,7 @@ const products2= [
         id:67,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas",precio:1060 },
+            {nombre:"Medidas",},
             {nombre:"15cm x 20cm ", precio:1060 },
             {nombre:"19cm x 27cm ", precio:1200},
         ],
@@ -557,7 +557,7 @@ const products2= [
         id:70,
         categoria:"bandeja",
         medida:[
-            {nombre:"Medidas", precio:690 },
+            {nombre:"Medidas",},
             {nombre:"22cm x 14cm ", precio:690 },
             {nombre:"24cm x 16cm ", precio:800},
             {nombre:"26cm x 19cm ", precio:940},
@@ -570,7 +570,7 @@ const products2= [
         id:73,
         categoria:"cajita",
         medida:[
-            {nombre:"Medidas", precio:450 },
+            {nombre:"Medidas",},
             { nombre:"6cm x 3cm ", precio:450 },
             {nombre:"8cm x 6cm ", precio:500},
             {nombre:"8cm x 8cm ", precio:560},
@@ -584,7 +584,7 @@ const products2= [
         id:76,
         categoria:"cajita",
         medida:[
-            {nombre:"Medidas",precio:1060 },
+            {nombre:"Medidas",},
             {nombre:"10cm x 13cm ", precio:1060 },
             {nombre:"12cm x 20cm ", precio:1880},
             {nombre:"16cm x 23cm ", precio:2450},
@@ -598,7 +598,7 @@ const products2= [
         id:79,
         categoria:"cajita",
         medida:[
-            {nombre:"Medidas", precio:750 },
+            {nombre:"Medidas",},
             {nombre:"8cm x 8cm x 8cm ", precio:750 },
         ],
         image:'68.png' ,
@@ -609,7 +609,7 @@ const products2= [
         id:80,
         categoria:"bastidores",
         medida:[
-            { nombre:"Medidas", precio: 750 },
+            { nombre:"Medidas", },
             { nombre: "8cm x 8cm x 8cm", precio: 750 },
             { nombre: "20cm x 20cm", precio: 50 },
             { nombre: "40cm x 40cm", precio: 1550 },
@@ -718,7 +718,7 @@ const products2= [
         id:83,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'74.png' ,
@@ -729,7 +729,7 @@ const products2= [
         id:84,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'75.png' ,
@@ -740,7 +740,7 @@ const products2= [
         id:85,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'76.png' ,
@@ -751,7 +751,7 @@ const products2= [
         id:86,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'77.png' ,
@@ -762,7 +762,7 @@ const products2= [
         id:87,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'78.png' ,
@@ -773,7 +773,7 @@ const products2= [
         id:88,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'79.png' ,
@@ -784,7 +784,7 @@ const products2= [
         id:89,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'80.png' ,
@@ -795,7 +795,7 @@ const products2= [
         id:90,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'81.png' ,
@@ -806,7 +806,7 @@ const products2= [
         id:91,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'82.png' ,
@@ -817,7 +817,7 @@ const products2= [
         id:92,
         categoria:"porta_rollo",
         medida:[
-            {nombre:"Medidas", precio:1100 },
+            {nombre:"Medidas", },
             {nombre:"35cm de alto", precio:1100 },
         ],
         image:'83.png' ,
@@ -828,7 +828,7 @@ const products2= [
         id:92,
         categoria:"caja_de_te",
         medida:[
-            {nombre:"Medidas", precio:2200 },
+            {nombre:"Medidas", },
             {nombre:"19cm x 19cm", precio:2200 },
         ],
         image:'85.png' ,
@@ -838,7 +838,7 @@ const products2= [
         id:92,
         categoria:"caja_de_te",
         medida:[
-            {nombre:"Medidas", precio:3060 },
+            {nombre:"Medidas", },
             {nombre:"26cm x 19cm", precio:3060 },
         ],
         image:'84.png' ,

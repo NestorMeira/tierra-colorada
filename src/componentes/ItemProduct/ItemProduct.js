@@ -12,11 +12,12 @@ const ItemProduct = ({ data }) => {
 
   const [selectedMedida, setSelectedMedida] = useState(medida[0].nombre);
   const [selectedPrecio, setSelectedPrecio] = useState(medida[0].precio);
-
+  const [showPrice, setShowPrice] = useState(false);
   const onMedidaChange = (newMedida) => {
     const selectedMedidaData = medida.find((item) => item.nombre === newMedida);
     setSelectedMedida(newMedida);
     setSelectedPrecio(selectedMedidaData.precio);
+    setShowPrice(true);
   };
 
   const onAdd = (contador) => {
@@ -40,12 +41,12 @@ const ItemProduct = ({ data }) => {
   };
 
   return (
-    <div className="contenedor-lista">
+    <article className="contenedor-lista">
       <div className="lista-productos">
-        <img src={`/assets/${image}`} alt="Imagen producto" className="remera1" />
+        <img src={`/assets/${image}`} alt="Imagen producto" />
         <div className="descripcion">
-          <h6>cod.{id}</h6>
-          <p>{titulo}</p>
+          <p>cod.{id}</p>
+          <h2>{titulo}</h2>
           <div className="medida">
            
             <select value={selectedMedida} onChange={(e) => onMedidaChange(e.target.value)}>
@@ -57,12 +58,12 @@ const ItemProduct = ({ data }) => {
             </select>
           </div>
 
-          <span>Precio: ${selectedPrecio}</span>
+          {showPrice && <span>Precio: ${selectedPrecio}</span>}
 
           <ItemCount stock={data.stock} initial={1} onAdd={onAdd} />
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

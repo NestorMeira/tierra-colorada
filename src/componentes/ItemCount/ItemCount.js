@@ -35,12 +35,14 @@ return(
             </div>
             <div className='agregar'>
             <button onClick={() =>{
+                
                 Swal.fire({
+                    
                     title: 'Tu producto fue agregado al carrito',
-                    imageUrl: '/assets/logo.png',
-                    imageWidth: 200,
-                    imageHeight: 100,
-                    imageAlt: 'Custom image',      
+                    icon:'success',
+                  
+                  
+                   
                  }) 
                  props.onAdd(contador)}}>Agregar al carrito</button>
             </div>
