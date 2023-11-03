@@ -8,6 +8,7 @@
     position: sticky; 
     top: 0px; 
     height: 80px;
+    z-index: 2;
     
 }
 .categorias{
@@ -73,11 +74,11 @@
        
     background-color: #ffffffd8;
         .categorias{
-            margin-left: 32%;
+            margin-left: 25%;
          
         }
      .inicio{
-         margin-left: 12%;
+         margin-left: 7%;
      }
  }
     

@@ -8,8 +8,12 @@ import Navbar from './componentes/NavBar/NavBar';
 import Footer from './componentes/Footer/Footer';
 import Header from './componentes/NavBar/Header/Header';
 
+
 function App() {
 
+  const products = [
+  
+  ];
 
   return (
    <CartProvider>

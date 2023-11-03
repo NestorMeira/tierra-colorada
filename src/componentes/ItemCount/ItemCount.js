@@ -28,7 +28,7 @@ const removeContador = ()=>{
 return(
     <>
         <div className="count-produc">
-            <h3>Cantidad</h3>
+            <h3>Cantidad:</h3>
             <button className='cantidad' onClick={removeContador}>-</button>
             <span>{contador}</span>
             <button className='cantidad'onClick={addContador}>+</button>  
@@ -39,10 +39,7 @@ return(
                 Swal.fire({
                     
                     title: 'Tu producto fue agregado al carrito',
-                    icon:'success',
-                  
-                  
-                   
+                    icon:'success',      
                  }) 
                  props.onAdd(contador)}}>Agregar al carrito</button>
             </div>

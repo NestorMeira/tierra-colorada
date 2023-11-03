@@ -54,7 +54,7 @@ const Pagar = () => {
     })
 
     const sendWhatsAppMessage = () => {
-        const numero = '+543751606367';
+        const numero = '+543751396402';
         const mensaje = `Hola, he realizado un pedido. Mi código de seguimiento es: ${success}`;
     
         const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
