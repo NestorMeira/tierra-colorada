@@ -402,7 +402,7 @@ const products2= [
     {
         id:59,
         categoria:"porta_llave",
-        medida:[            {nombre:"33cm x 16cm ", precio:1380 },
+        medida:[            {nombre:"33cm x 16cm ", precio:1200 },
         ],    
         image:'53.png' , 
         stock: 99,
@@ -411,7 +411,8 @@ const products2= [
     {
         id:60,
         categoria:"porta_llave",
-        medida:[            {nombre:"24cm x 11cm ", precio:1060 },
+        medida:[            
+            {nombre:"24cm x 11cm ", precio:940 },
         ],    
         image:'55.png' ,
         
@@ -430,7 +431,7 @@ const products2= [
     {
         id:62,
         categoria:"porta_llave",
-        medida:[            {nombre:"26cm x 11cm ", precio:1130 },
+        medida:[            {nombre:"26cm x 11cm ", precio:880 },
         ],    
         image:'50.png',
         stock: 99,
@@ -449,7 +450,7 @@ const products2= [
         id:64,
         categoria:"porta_llave",
         medida:[            
-            {nombre:"24cm x 19cm ",  precio:1750}
+            {nombre:"24cm x 19cm ",  precio:1250}
         ],    
         image:'41.png',
         stock: 99,
@@ -458,8 +459,9 @@ const products2= [
     {
         id:65,
         categoria:"porta_llave",
-        medida:[            {nombre:"25cm x 17cm ", precio:1250 },
-            {nombre:"25cm x 17cm ", precio:1250}
+        medida:[            
+            {nombre:"18cm x 15cm ", precio:940 },
+           
         ],     
         image:'45.png' ,  
         stock: 99,
@@ -734,7 +736,7 @@ const products2= [
         titulo:"Porta rollo"
     },     
     {
-        id:92,
+        id:93,
         categoria:"caja_de_te",
         medida:[
             {nombre:"19cm x 19cm", precio:2200 }
@@ -744,7 +746,7 @@ const products2= [
         titulo:"Caja de té"
     },       
     {
-        id:92,
+        id:94,
         categoria:"caja_de_te",
         medida:[
             {nombre:"26cm x 19cm", precio:3060 }
@@ -754,7 +756,7 @@ const products2= [
         titulo:"Caja de té"
     },          
     {
-        id:93,
+        id:95,
         categoria:"lapicero",
         medida:[                 
             {nombre:"12cm alto", precio:800}
@@ -764,7 +766,7 @@ const products2= [
         titulo:"Lapicero"
     }, 
     {
-        id:94,
+        id:96,
         categoria:"circulo_mdf_3mm",
         medida:[        
             {nombre:"10cm", precio:130},         
@@ -779,7 +781,7 @@ const products2= [
         titulo:"Círculo mdf 3mm"
     }, 
     {
-        id:95,
+        id:97,
         categoria:"circulo_melamina_3mm",
         medida:[        
             {nombre:"15cm", precio:190},         
@@ -794,7 +796,7 @@ const products2= [
         titulo:"Círculo melamina 3mm"
     }, 
     {
-        id:96,
+        id:98,
         categoria:"caja_de_te",
         medida:[    
             {nombre:"19 x 19cm", precio:2200}
@@ -805,7 +807,7 @@ const products2= [
         titulo:"Caja de té"
     },
     {
-        id:97,
+        id:99,
         categoria:"porta_aderezo",
         medida:[
             {nombre:"11cm x 10cm", precio:750 }
@@ -815,7 +817,7 @@ const products2= [
         titulo:"Porta aderezo"
     },
     {
-        id:98,
+        id:100,
         categoria:"soporte",
         medida:[
             {nombre:"8cm de alto", precio:190 },
@@ -827,7 +829,7 @@ const products2= [
         titulo:"Soporte"
     },
     {
-        id:99,
+        id:101,
         categoria:"porta_celular",
         medida:[
             {nombre:"17cm de alto", precio:800 }
@@ -837,7 +839,7 @@ const products2= [
         titulo:"Porta celular"
     },
     {
-        id:100,
+        id:102,
         categoria:"porta_celular",
         medida:[
             {nombre:"17cm de alto", precio:800 }
@@ -848,7 +850,7 @@ const products2= [
     },
 
     {
-        id:102,
+        id:103,
         categoria:"letras",
         medida:[
             {nombre:"1,7 cm", precio:25 },
@@ -865,7 +867,7 @@ const products2= [
         titulo:"Letras"
     },
     {
-        id:103,
+        id:104,
         categoria:"caja_con_tapa",
         medida:[
             {nombre:"8cm x 8cm x 7cm", precio:500 },
@@ -881,7 +883,522 @@ const products2= [
         image:'56.png' ,
         stock: 99,
         titulo:"Caja con tapa"
-    }
+    },
+    {
+        id:105,
+        categoria:"porta_llave",
+        medida:[
+            {nombre:"35cm de largo", precio:1880 }
+        ],
+        image:'91.png' ,
+        stock: 99,
+        titulo:"Porta llave"
+    },
+    {
+        id:106,
+        categoria:"porta_llave",
+        medida:[
+            {nombre:"43cm de largo", precio:2000 }
+        ],
+        image:'96.png' ,
+        stock: 99,
+        titulo:"Porta llave"
+    },
+    {
+        id:107,
+        categoria:"caja_de_te",
+        medida:[
+            {nombre:"19cm x 19cm", precio:2200 }
+        ],
+        image:'89.png' ,
+        stock: 99,
+        titulo:"Caja de té"
+    },
+    {
+        id:108,
+        categoria:"casita",
+        medida:[
+            {nombre:"17cm x 12cm 23cm", precio:1900 }
+        ],
+        image:'100.png' ,
+        stock: 99,
+        titulo:"casita de pajaritos"
+    },
+    {
+        id:109,
+        categoria:"casita",
+        medida:[
+            {nombre:"20cm x 12cm 23cm", precio:1900 }
+        ],
+        image:'93.png' ,
+        stock: 99,
+        titulo:"casita de pajaritos"
+    },
+    {
+        id:154,
+        categoria:"casita",
+        medida:[
+            {nombre:"14cm x 15cm", precio:880 }
+        ],
+        image:'137.png' ,
+        stock: 99,
+        titulo:"casita de pajaritos"
+    },
+    {
+        id:110,
+        categoria:"porta_rollo",
+        medida:[
+            {nombre:"26cm x 31cm", precio:2380 }
+        ],
+        image:'99.png' ,
+        stock: 99,
+        titulo:"Porta rollo"
+    },
+    {
+        id:111,
+        categoria:"porta_rollo",
+        medida:[
+            {nombre:"30cm de ancho", precio:2000 }
+        ],
+        image:'92.png' ,
+        stock: 99,
+        titulo:"Porta rollo"
+    },
+    {
+        id:112,
+        categoria:"lapicero",
+        medida:[                 
+            {nombre:"11cm alto", precio:630}
+    ],
+      image:'90.png' ,
+        stock: 99,
+        titulo:"Lapicero melamina"
+    },
+    {
+        id:113,
+        categoria:"porta_llave",
+        medida:[            {nombre:"19cm x 25cm ", precio:1750 },
+        ],    
+        image:'97.png',
+        stock: 99,
+        titulo:"Porta carta"
+    },
+    {
+        id:114,
+        categoria:"navidad",
+        medida:[           
+             {nombre:"50cm de alto ", precio:1900 },
+        ],    
+        image:'102.png',
+        stock: 99,
+        titulo:"Arbolito"
+    },
+    {
+        id:115,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"37cm de alto ", precio:800 },
+            {nombre:"50cm de alto ", precio:1200 },
+        ],    
+        image:'94.png',
+        stock: 99,
+        titulo:"Arbolito"
+    },
+    {
+        id:116,
+        categoria:"navidad",
+        medida:[            {nombre:"32cm de alto ", precio:450 },
+        ],    
+        image:'98.png',
+        stock: 99,
+        titulo:"Arbolito"
+    },
+    {
+        id:117,
+        categoria:"navidad",
+        medida:[           
+             {nombre:"48cm de alto ", precio:940 },
+        ],    
+        image:'95.png',
+        stock: 99,
+        titulo:"Arbolito"
+    },
+    {
+        id:118,
+        categoria:"porta_llave",
+        medida:[            
+            {nombre:"22cm x 18cm ", precio:1200 },
+        ],    
+        image:'101.png',
+        stock: 99,
+        titulo:"Porta llave"
+    },
+    {
+        id:119,
+        categoria:"navidad",
+        medida:[           
+             {nombre:"33cm de alto ", precio:940 },
+        ],    
+        image:'103.png',
+        stock: 99,
+        titulo:"Arbolito"
+    },
+    {
+        id:137,
+        categoria:"navidad",
+        medida:[           
+             {nombre:"14cm de alto ", precio:190 },
+             {nombre:"16cm de alto ", precio:190 },
+             {nombre:"22cm de alto ", precio:250 },
+             {nombre:"40cm de alto ", precio:380 },
+        ],    
+        image:'129.png',
+        stock: 99,
+        titulo:"Arbolito"
+    },
+    {
+        id:120,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"7cm de diametro ", precio:300 },
+        ],    
+        image:'104.png',
+        stock: 99,
+        titulo:"Adorno"
+    },
+    {
+        id:121,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"9cm de diametro ", precio:380 },
+        ],    
+        image:'105.png',
+        stock: 99,
+        titulo:"Adorno"
+    },
+    {
+        id:122,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"9cm de diametro ", precio:300 },
+        ],    
+        image:'106.png',
+        stock: 99,
+        titulo:"Adorno"
+    },
+    {
+        id:123,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"7cm de diametro ", precio:300 },
+        ],    
+        image:'107.png',
+        stock: 99,
+        titulo:"Adorno"
+    },
+    {
+        id:124,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"8cm x 5cm", precio:190 },
+            {nombre:"8cm x 7cm", precio:250 },
+            {nombre:"9cm x 8cm", precio:300 }
+        ],    
+        image:'108.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:125,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"16cm ", precio:250 },
+        ],    
+        image:'109.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:126,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"6cm ", precio:130 },
+        ],    
+        image:'110.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:127,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"7cm ", precio:100 },
+        ],    
+        image:'111.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:128,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"8cm ", precio:380 },
+        ],    
+        image:'113.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:129,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"13cm ", precio:380 },
+        ],    
+        image:'114.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:130,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"9cm ", precio:150 }
+        ],    
+        image:'115.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:131,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"13cm ", precio:300 }
+        ],    
+        image:'116.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:132,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"20cm x 13cm", precio:940 }
+        ],    
+        image:'117.png',
+        stock: 99,
+        titulo:"Pecebre"
+    },
+    {
+        id:133,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"20cm x 13cm ", precio:940 }
+        ],    
+        image:'112.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:134,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"12cm ", precio:250 }
+        ],    
+        image:'118.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:135,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"12cm ", precio:380 }
+        ],    
+        image:'119.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:136,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"5cm ", precio:100 },
+            {nombre:"7cm ", precio:140 }
+        ],    
+        image:'120.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:137,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"5cm ", precio:100 },
+            {nombre:"7cm ", precio:140 }
+        ],    
+        image:'120.png',
+        stock: 99,
+        titulo:"Aplique"
+    },
+    {
+        id:139,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"30cm x 26cm", precio:1400 }
+        ],    
+        image:'121.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:140,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"27cm x 30cm", precio:1380 }
+        ],    
+        image:'122.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:141,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"18cm x 26cm", precio:1380 }
+        ],    
+        image:'123.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:142,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"20cm x 22cm", precio:1100 }
+        ],    
+        image:'124.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:143,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"26cm x 20cm", precio:1050 }
+        ],    
+        image:'125.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:144,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"25cm x 20cm", precio:2000 }
+        ],    
+        image:'126.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:145,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"26cm x 20cm", precio:1100 }
+        ],    
+        image:'127.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:146,
+        categoria:"navidad_pecebre",
+        medida:[            
+            {nombre:"26cm x 24cm", precio:1100 }
+        ],    
+        image:'128.png',
+        stock: 99,
+        titulo:"Pesebre"
+    },
+    {
+        id:147,
+        categoria:"navidad_palabra",
+        medida:[            
+            {nombre:"15cm", precio:300 }
+        ],    
+        image:'130.png',
+        stock: 99,
+        titulo:"Palabas"
+    },
+    {
+        id:148,
+        categoria:"navidad_palabra",
+        medida:[            
+            {nombre:"26cm", precio:500 }
+        ],    
+        image:'131.png',
+        stock: 99,
+        titulo:"Palabas"
+    },
+    {
+        id:149,
+        categoria:"navidad_palabra",
+        medida:[            
+            {nombre:"11cm", precio:190 }
+        ],    
+        image:'132.png',
+        stock: 99,
+        titulo:"Palabas"
+    },
+    {
+        id:150,
+        categoria:"navidad_palabra",
+        medida:[            
+            {nombre:"13cm", precio:250 }
+        ],    
+        image:'133.png',
+        stock: 99,
+        titulo:"Palabas"
+    },
+    {
+        id:151,
+        categoria:"navidad_palabra",
+        medida:[            
+            {nombre:"10cm", precio:290 }
+        ],    
+        image:'134.png',
+        stock: 99,
+        titulo:"Palabas"
+    },
+    {
+        id:152,
+        categoria:"navidad_palabra",
+        medida:[            
+            {nombre:"16cm", precio:300 }
+        ],    
+        image:'135.png',
+        stock: 99,
+        titulo:"Palabas"
+    },
+    {
+        id:153,
+        categoria:"navidad_palabra",
+        medida:[            
+            {nombre:"14cm", precio:300 }
+        ],    
+        image:'136.png',
+        stock: 99,
+        titulo:"Palabas"
+    },
+    
+    
+    
+    
+
+
+
+
+
                              
 ]
 

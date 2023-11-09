@@ -44,8 +44,12 @@ const Navbar = () => {
             <option value="/categoria/caja_con_tapa">Cajas con tapa</option>
             <option value="/categoria/portaretrato">Portaretratos</option>
             <option value="/categoria/soporte">Soporte</option>
+            <option value="/categoria/navidad">Navidad</option>
+            <option value="/categoria/navidad_pecebre">Pecebre</option>
+            <option value="/categoria/navidad_palabra">Palabras</option>
             <option value="/categoria/porta_celular">Porta celular</option>
             <option value="/categoria/letras">Letras</option>
+            <option value="/categoria/casita">Casitas</option>
             <option value="/categoria/bandeja">Bandejas</option>
             <option value="/categoria/caja_de_te">Cajas de Té</option>
             <option value="/categoria/lapicero">Lapiceros</option>

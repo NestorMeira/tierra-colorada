@@ -16,7 +16,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="logo">
-        <span className="logo-text">Artesanias tierra colorada</span>
+        <span className="logo-text">Artesanias Tierra Colorada</span>
         <span className="logo-text">Eldorado-Misiones</span>
       </div>
       {/* <div className="creator">

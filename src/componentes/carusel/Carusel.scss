@@ -1,0 +1,37 @@
+.top{
+    margin-left:96.8%;
+   
+    position: -webkit-sticky; 
+    position: sticky; 
+    top:400px;
+    background-color: transparent;
+    border: none;
+    color: rgba(59, 57, 57, 0.693);
+    
+    .topIcon{
+        border-radius: 10px;
+        font-size: 1.7rem;
+        background-color: transparent;
+        box-shadow: 1px 2px 2px 1px rgba(67, 66, 66, 0.25);
+     }
+    }
+    
+    @media (max-width:920px){
+        .top{
+          margin-left: 95.4%;
+        }
+    }
+    @media (max-width:768px){
+        .top{
+          margin-left: 93%;
+        }
+    }
+    @media (max-width:470px){
+        .top{
+          margin-left: 91.3%;
+        
+        .topIcon{
+            font-size: 1.5rem;
+        }
+    }
+    }
