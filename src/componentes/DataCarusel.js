@@ -127,7 +127,8 @@ export const bandeja = [
         {
             id:117,
             categoria:"navidad",
-            medida:[            {nombre:"48cm de alto ", precio:940 },
+            medida:[            
+                {nombre:"30cm de alto ", precio:940 },
             ],    
             image:'95.png',
             stock: 99,
@@ -153,6 +154,17 @@ export const bandeja = [
                  {nombre:"40cm de alto ", precio:380 },
             ],    
             image:'129.png',
+            stock: 99,
+            titulo:"Arbolito"
+        },
+        {
+            id:156,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"50cm de alto", precio:1130 },
+                {nombre:"60cm de alto", precio:1380 }
+            ],    
+            image:'140.png',
             stock: 99,
             titulo:"Arbolito"
         },
@@ -286,13 +298,13 @@ export const bandeja = [
     export const navidad3=[
         {
             id:132,
-            categoria:"navidad_pecebre",
+            categoria:"navidad",
             medida:[            
                 {nombre:"20cm x 13cm", precio:940 }
             ],    
             image:'117.png',
             stock: 99,
-            titulo:"Pecebre"
+            titulo:"Pesebre"
         },
         {
             id:133,
@@ -302,8 +314,162 @@ export const bandeja = [
             ],    
             image:'112.png',
             stock: 99,
-            titulo:"Aplique"
+            titulo:"Pesebre"
         },
+        {
+            id:139,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"30cm x 26cm", precio:1400 }
+            ],    
+            image:'121.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+        {
+            id:140,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"27cm x 30cm", precio:1380 }
+            ],    
+            image:'122.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+        {
+            id:141,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"18cm x 26cm", precio:1380 }
+            ],    
+            image:'123.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+        {
+            id:142,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"20cm x 22cm", precio:1100 }
+            ],    
+            image:'124.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+        {
+            id:143,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"26cm x 20cm", precio:1050 }
+            ],    
+            image:'125.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+        {
+            id:144,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"25cm x 20cm", precio:2000 }
+            ],    
+            image:'126.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+        {
+            id:145,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"26cm x 20cm", precio:1100 }
+            ],    
+            image:'127.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+        {
+            id:146,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"26cm x 24cm", precio:1100 }
+            ],    
+            image:'128.png',
+            stock: 99,
+            titulo:"Pesebre"
+        },
+  
+    ]
+    export const navidad4=[
+        {
+            id:147,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"15cm", precio:300 }
+            ],    
+            image:'130.png',
+            stock: 99,
+            titulo:"Palabas"
+        },
+        {
+            id:148,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"26cm", precio:500 }
+            ],    
+            image:'131.png',
+            stock: 99,
+            titulo:"Palabas"
+        },
+        {
+            id:149,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"11cm", precio:190 }
+            ],    
+            image:'132.png',
+            stock: 99,
+            titulo:"Palabas"
+        },
+        {
+            id:150,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"13cm", precio:250 }
+            ],    
+            image:'133.png',
+            stock: 99,
+            titulo:"Palabas"
+        },
+        {
+            id:151,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"10cm", precio:290 }
+            ],    
+            image:'134.png',
+            stock: 99,
+            titulo:"Palabas"
+        },
+        {
+            id:152,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"16cm", precio:300 }
+            ],    
+            image:'135.png',
+            stock: 99,
+            titulo:"Palabas"
+        },
+        {
+            id:153,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"14cm", precio:300 }
+            ],    
+            image:'136.png',
+            stock: 99,
+            titulo:"Palabas"
+        },
+        
         {
             id:134,
             categoria:"navidad",
@@ -335,167 +501,6 @@ export const bandeja = [
             stock: 99,
             titulo:"Aplique"
         },
-        {
-            id:137,
-            categoria:"navidad",
-            medida:[            
-                {nombre:"5cm ", precio:100 },
-                {nombre:"7cm ", precio:140 }
-            ],    
-            image:'120.png',
-            stock: 99,
-            titulo:"Aplique"
-        },
-        {
-            id:139,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"30cm x 26cm", precio:1400 }
-            ],    
-            image:'121.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:140,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"27cm x 30cm", precio:1380 }
-            ],    
-            image:'122.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:141,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"18cm x 26cm", precio:1380 }
-            ],    
-            image:'123.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:142,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"20cm x 22cm", precio:1100 }
-            ],    
-            image:'124.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:143,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"26cm x 20cm", precio:1050 }
-            ],    
-            image:'125.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:144,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"25cm x 20cm", precio:2000 }
-            ],    
-            image:'126.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:145,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"26cm x 20cm", precio:1100 }
-            ],    
-            image:'127.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:146,
-            categoria:"navidad_pecebre",
-            medida:[            
-                {nombre:"26cm x 24cm", precio:1100 }
-            ],    
-            image:'128.png',
-            stock: 99,
-            titulo:"Pesebre"
-        },
-        {
-            id:147,
-            categoria:"navidad_palabra",
-            medida:[            
-                {nombre:"15cm", precio:300 }
-            ],    
-            image:'130.png',
-            stock: 99,
-            titulo:"Palabas"
-        },
-        {
-            id:148,
-            categoria:"navidad_palabra",
-            medida:[            
-                {nombre:"26cm", precio:500 }
-            ],    
-            image:'131.png',
-            stock: 99,
-            titulo:"Palabas"
-        },
-        {
-            id:149,
-            categoria:"navidad_palabra",
-            medida:[            
-                {nombre:"11cm", precio:190 }
-            ],    
-            image:'132.png',
-            stock: 99,
-            titulo:"Palabas"
-        },
-        {
-            id:150,
-            categoria:"navidad_palabra",
-            medida:[            
-                {nombre:"13cm", precio:250 }
-            ],    
-            image:'133.png',
-            stock: 99,
-            titulo:"Palabas"
-        },
-        {
-            id:151,
-            categoria:"navidad_palabra",
-            medida:[            
-                {nombre:"10cm", precio:290 }
-            ],    
-            image:'134.png',
-            stock: 99,
-            titulo:"Palabas"
-        },
-        {
-            id:152,
-            categoria:"navidad_palabra",
-            medida:[            
-                {nombre:"16cm", precio:300 }
-            ],    
-            image:'135.png',
-            stock: 99,
-            titulo:"Palabas"
-        },
-        {
-            id:153,
-            categoria:"navidad_palabra",
-            medida:[            
-                {nombre:"14cm", precio:300 }
-            ],    
-            image:'136.png',
-            stock: 99,
-            titulo:"Palabas"
-        }
     ]
 
     export const portaretrato = [
@@ -997,6 +1002,17 @@ export const bandeja = [
                 stock: 99,
                 titulo:"Soporte"
             },
+            {
+                id:155,
+                categoria:"porta_celular",
+                medida:[
+                    {nombre:"37cm de alto", precio:1880 }
+                ],
+                image:'139.png' ,
+                stock: 99,
+                titulo:"Porta tablet"
+            },
+        
              {
                 id:103,
                 categoria:"letras",

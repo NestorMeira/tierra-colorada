@@ -9,11 +9,8 @@ import Footer from './componentes/Footer/Footer';
 import Header from './componentes/NavBar/Header/Header';
 
 
-function App() {
 
-  const products = [
-  
-  ];
+function App() {
 
   return (
    <CartProvider>
@@ -22,16 +19,14 @@ function App() {
      <Navbar />
      <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/categoria/:categoryId' element={<ItemListContainer/>}/>    
+      <Route path='/categoria/:categoryId' element={<ItemListContainer/>}/> 
+      {/* <Route path='/productos/:id' element={<ItemListContainer2/>} /> */}
       <Route path='/cart' element={<Cart/>}/>
       <Route path='*' element={<h1>ERROR 404 -página no encontrada</h1>}  title="Página no encontrada"/>
      </Routes> 
      <Footer />
     </BrowserRouter>
    </CartProvider>
-
-   
-    
   );
 }
 

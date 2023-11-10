@@ -1,7 +1,7 @@
-
 import ItemList from '../ItemList/ItemList';
 import React ,{ useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import KeyboardDoubleArrowUpOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowUpOutlined';
 import products2 from '../utils/Mdf';
 
 const ItemListContainer = ()=>{
@@ -37,6 +37,13 @@ useEffect( () =>{
 },[categoryId])
 
 
+const scrollToTop = () => {
+    window.scrollTo({
+      top: 200,
+      behavior: 'smooth',
+    });
+  };
+
 
 
 
@@ -44,6 +51,7 @@ useEffect( () =>{
         <>
 
         <div className="lista-productos">
+        <button className='top' onClick={scrollToTop}><KeyboardDoubleArrowUpOutlinedIcon className='topIcon'/></button> 
             <ItemList dataProducts={listProducts}/>
         </div>
 

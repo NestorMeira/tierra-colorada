@@ -1,15 +1,13 @@
 import { useState, useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
-
 import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
-import './ItemProduct.scss'
 
+import './ItemProduct.scss'
 
 const ItemProduct = ({ data }) => {
   const { titulo, image, precio, id, medida } = data;
   const { addRemera } = useContext(CartContext);
-
   const [selectedMedida, setSelectedMedida] = useState(medida[0].nombre);
   const [selectedPrecio, setSelectedPrecio] = useState(medida[0].precio);
 
@@ -46,14 +44,15 @@ const ItemProduct = ({ data }) => {
             <select value={selectedMedida} onChange={(e) => onMedidaChange(e.target.value)}>
               {medida.map((medidaOption) => (
                 <option key={medidaOption.nombre} value={medidaOption.nombre}>
-                  {medidaOption.nombre}
+                  {medidaOption.nombre} 
+
                 </option>
               ))}
             </select><ArrowDropDownSharpIcon className='flechita'/>
           </div>
-
+         
           <span>Precio: ${selectedPrecio}</span>
-
+          
           <ItemCount stock={data.stock} initial={1} onAdd={onAdd} />
         </div>
       </div>

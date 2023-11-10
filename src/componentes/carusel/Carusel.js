@@ -7,7 +7,7 @@ import{
   cajita,lapicero,portaCelu,
   cajonera,espejo,bastidores,
   portaLlave, portaRollo,navidad,
-  navidad2,navidad3
+  navidad2,navidad3,navidad4
 } from '../DataCarusel'
 
 
@@ -27,6 +27,7 @@ const Carusel = () => {
      <ProductCarousel products={navidad} />
      <ProductCarousel products={navidad2} />
      <ProductCarousel products={navidad3} />
+     <ProductCarousel products={navidad4} />
      <ProductCarousel products={portaretrato} />
      <ProductCarousel products={portaCelu} />
      <ProductCarousel products={cajaDeTe} />

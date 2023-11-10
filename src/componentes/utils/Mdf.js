@@ -1017,7 +1017,7 @@ const products2= [
         id:117,
         categoria:"navidad",
         medida:[           
-             {nombre:"48cm de alto ", precio:940 },
+             {nombre:"30cm de alto ", precio:940 },
         ],    
         image:'95.png',
         stock: 99,
@@ -1180,7 +1180,7 @@ const products2= [
     },
     {
         id:132,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"20cm x 13cm", precio:940 }
         ],    
@@ -1196,7 +1196,7 @@ const products2= [
         ],    
         image:'112.png',
         stock: 99,
-        titulo:"Aplique"
+        titulo:"Pesebre"
     },
     {
         id:134,
@@ -1229,20 +1229,10 @@ const products2= [
         stock: 99,
         titulo:"Aplique"
     },
-    {
-        id:137,
-        categoria:"navidad",
-        medida:[            
-            {nombre:"5cm ", precio:100 },
-            {nombre:"7cm ", precio:140 }
-        ],    
-        image:'120.png',
-        stock: 99,
-        titulo:"Aplique"
-    },
+   
     {
         id:139,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"30cm x 26cm", precio:1400 }
         ],    
@@ -1252,7 +1242,7 @@ const products2= [
     },
     {
         id:140,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"27cm x 30cm", precio:1380 }
         ],    
@@ -1262,7 +1252,7 @@ const products2= [
     },
     {
         id:141,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"18cm x 26cm", precio:1380 }
         ],    
@@ -1272,7 +1262,7 @@ const products2= [
     },
     {
         id:142,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"20cm x 22cm", precio:1100 }
         ],    
@@ -1282,7 +1272,7 @@ const products2= [
     },
     {
         id:143,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"26cm x 20cm", precio:1050 }
         ],    
@@ -1292,7 +1282,7 @@ const products2= [
     },
     {
         id:144,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"25cm x 20cm", precio:2000 }
         ],    
@@ -1302,7 +1292,7 @@ const products2= [
     },
     {
         id:145,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"26cm x 20cm", precio:1100 }
         ],    
@@ -1312,7 +1302,7 @@ const products2= [
     },
     {
         id:146,
-        categoria:"navidad_pecebre",
+        categoria:"navidad",
         medida:[            
             {nombre:"26cm x 24cm", precio:1100 }
         ],    
@@ -1322,7 +1312,7 @@ const products2= [
     },
     {
         id:147,
-        categoria:"navidad_palabra",
+        categoria:"navidad",
         medida:[            
             {nombre:"15cm", precio:300 }
         ],    
@@ -1332,7 +1322,7 @@ const products2= [
     },
     {
         id:148,
-        categoria:"navidad_palabra",
+        categoria:"navidad",
         medida:[            
             {nombre:"26cm", precio:500 }
         ],    
@@ -1342,7 +1332,7 @@ const products2= [
     },
     {
         id:149,
-        categoria:"navidad_palabra",
+        categoria:"navidad",
         medida:[            
             {nombre:"11cm", precio:190 }
         ],    
@@ -1352,7 +1342,7 @@ const products2= [
     },
     {
         id:150,
-        categoria:"navidad_palabra",
+        categoria:"navidad",
         medida:[            
             {nombre:"13cm", precio:250 }
         ],    
@@ -1362,7 +1352,7 @@ const products2= [
     },
     {
         id:151,
-        categoria:"navidad_palabra",
+        categoria:"navidad",
         medida:[            
             {nombre:"10cm", precio:290 }
         ],    
@@ -1372,7 +1362,7 @@ const products2= [
     },
     {
         id:152,
-        categoria:"navidad_palabra",
+        categoria:"navidad",
         medida:[            
             {nombre:"16cm", precio:300 }
         ],    
@@ -1382,15 +1372,45 @@ const products2= [
     },
     {
         id:153,
-        categoria:"navidad_palabra",
+        categoria:"navidad",
         medida:[            
             {nombre:"14cm", precio:300 }
         ],    
         image:'136.png',
         stock: 99,
         titulo:"Palabas"
+    },  
+    {
+        id:154,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"40cm de alto", precio:1100 }
+        ],    
+        image:'138.png',
+        stock: 99,
+        titulo:"Arbolito"
     },
-    
+    {
+        id:155,
+        categoria:"porta_celular",
+        medida:[
+            {nombre:"37cm de alto", precio:1880 }
+        ],
+        image:'139.png' ,
+        stock: 99,
+        titulo:"Porta tablet"
+    },
+    {
+        id:156,
+        categoria:"navidad",
+        medida:[            
+            {nombre:"50cm de alto", precio:1130 },
+            {nombre:"60cm de alto", precio:1380 }
+        ],    
+        image:'140.png',
+        stock: 99,
+        titulo:"Arbolito"
+    }
     
     
     

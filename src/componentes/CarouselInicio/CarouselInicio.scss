@@ -1,0 +1,11 @@
+.fotos{
+    width: 90%;
+    margin-left: 5%;
+}
+
+@media (max-width:768px){
+    .fotos{
+        width: 100%;
+        margin-left: 0;
+    }
+}

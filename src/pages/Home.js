@@ -1,3 +1,5 @@
+import CarouselInicio from "../componentes/CarouselInicio/CarouselInicio";
+import Consultar from "../componentes/Consultar/Consultar";
 import Carusel from "../componentes/carusel/Carusel";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
@@ -23,11 +25,13 @@ const Home = ()=>{
         <h3>● Envíos con Neo o Más.</h3>
         <button className='wpp' onClick={sendWhatsAppMessage}>WhatsApp   <WhatsAppIcon className='icom-wpp'/></button>
         </div>
-      
          </div>
-         <div>
+          <CarouselInicio/>
+
+          <Consultar/>
+       
         <Carusel/>
-        </div>
+       
         </>
     );
 }

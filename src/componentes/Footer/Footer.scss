@@ -6,7 +6,8 @@
     align-items: center;
     flex-wrap: wrap;
     height:110px;
-    width: 100%;
+    margin-right: -30px;
+    
   
   .logo {
     display: flex;
@@ -15,6 +16,7 @@
     align-items: center;
     width: 100%;
     padding-top: 1rem;
+    padding-right: 1rem;
  
   
     img{
