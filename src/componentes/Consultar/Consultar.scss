@@ -70,14 +70,7 @@
       text-shadow:  0.6px 0.6px 0px rgba(0, 0, 0, 0.527);
       }
       .wpp{
-        @keyframes scaleInOut {
-          0%, 100% {
-            transform: scale(0.9); /* Escala inicial y final (sin cambio) */
-          }
-          50% {
-            transform: scale(1); /* Ajusta el valor para la escala máxima durante la animación */
-          }
-        }
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,7 +85,7 @@
         margin-left: 10%;
         border: none;
         box-shadow:  1px 2px 2px 1px rgba(43, 42, 42, 0.527);
-        animation: scaleInOut 3s ease-in-out infinite;
+      
       &:hover{
         color: #ffffff;
       }
@@ -108,13 +101,16 @@
 
     @media (max-width:515px){
       .consultar{
+        justify-content: center;
+        align-items: center;
         .producto{
+          width: 110%;
           height: 230px;
       img{
-        width: 40%;
+        width: 43%;
       }
           .descripcion{
-            width: 200px;
+            width: 199px;
           }
         }
       }

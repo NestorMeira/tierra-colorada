@@ -61,8 +61,8 @@ const Navbar = () => {
             <option value="/categoria/bastidores">Bastidores</option>
             <option value="/categoria/placas3mm">Placas 3mm</option>
             <option value="/categoria/placas9mm">Placas 9mm</option>
-            <option value="/categoria/circulo_melamina_3mm">Círculo melamina</option>
-            <option value="/categoria/circulo_mdf_3mm">Círculo mdf</option>
+            <option value="/categoria/circulo_melamina">Círculo melamina</option>
+            <option value="/categoria/circulo_mdf">Círculo mdf</option>
             
           </select>
       </div>

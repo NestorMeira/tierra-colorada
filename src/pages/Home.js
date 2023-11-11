@@ -26,11 +26,9 @@ const Home = ()=>{
         <button className='wpp' onClick={sendWhatsAppMessage}>WhatsApp   <WhatsAppIcon className='icom-wpp'/></button>
         </div>
          </div>
-          <CarouselInicio/>
-
-          <Consultar/>
-       
+         <CarouselInicio/>
         <Carusel/>
+        <Consultar/>
        
         </>
     );

@@ -67,7 +67,7 @@ const Consultar = () => {
                 ))}
               </select>
             </div>
-            <p><ArrowDownwardIcon className='flecha'/>Consultas por whatsapp<ArrowDownwardIcon className='flecha'/></p>
+            <p><ArrowDownwardIcon className='flecha'/>Consultas por whatsapp <ArrowDownwardIcon className='flecha'/></p>
             <button className='wpp' onClick={() => sendWhatsAppMessage()}>WhatsApp  <WhatsAppIcon className='icom-wpp'/></button>
           </div>
         </div>
