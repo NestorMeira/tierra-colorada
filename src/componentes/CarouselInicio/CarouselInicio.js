@@ -21,7 +21,7 @@ const CarouselInicio = () => {
 
   return (
     <div className="fotos">
-      <Slider className="slider" {...settings}>
+      <Slider {...settings}>
          <img src="assets/inicio1.jpg" alt="fotos"/>
          <img src="assets/inicio2.jpg" alt="fotos"/>
          <img src="assets/inicio3.jpg" alt="fotos"/>

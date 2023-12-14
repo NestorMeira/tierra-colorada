@@ -1,13 +1,24 @@
 .fotos{
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 50px;
 }
 
 @media (max-width:768px){
     .fotos{
         width: 100%;
-        margin-left: 0;
-        margin-right: 10px;
+        margin-left:0 ;
+        padding-left: 1.1rem;  
         
     }
 }
+
+@media (max-width:768px){
+    .fotos{
+        width: 100%;
+        
+        padding-left: 0.8rem;  
+        
+    }
+}
+

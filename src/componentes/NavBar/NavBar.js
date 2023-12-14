@@ -46,24 +46,28 @@ const Navbar = () => {
             <option value="/categoria/soporte">Soporte</option>
             <option value="/categoria/navidad">Navidad</option>
             <option value="/categoria/porta_celular">Porta celular</option>
+            <option value="/categoria/porta_vino">Porta vino</option>
             <option value="/categoria/letras">Letras</option>
             <option value="/categoria/casita">Casitas</option>
             <option value="/categoria/bandeja">Bandejas</option>
             <option value="/categoria/caja_de_te">Cajas de Té</option>
             <option value="/categoria/lapicero">Lapiceros</option>
             <option value="/categoria/servilletero">Servilleteros</option>
+            <option value="/categoria/posa_torta">Posa torta</option>
             <option value="/categoria/porta_rollo">Porta rollo</option>
             <option value="/categoria/porta_aderezo">Porta aderezo</option>
             <option value="/categoria/cajonera">Cajoneras</option>
             <option value="/categoria/espejo">Espejos</option>
             <option value="/categoria/plantera">Planteras</option>
+            <option value="/categoria/torre">Torre Eiffel</option>
+            <option value="/categoria/fanales">Fanales</option>
             <option value="/categoria/porta_llave">Porta Llaves</option>
             <option value="/categoria/bastidores">Bastidores</option>
             <option value="/categoria/placas3mm">Placas 3mm</option>
             <option value="/categoria/placas9mm">Placas 9mm</option>
             <option value="/categoria/circulo_melamina">Círculo melamina</option>
             <option value="/categoria/circulo_mdf">Círculo mdf</option>
-            
+            <option value="/categoria/mates">mates</option>
           </select>
       </div>
       <CartWidget />

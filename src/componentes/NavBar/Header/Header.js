@@ -31,6 +31,7 @@ const Header = () => {
         target="_blank"
         rel="noopener noreferrer" 
         aria-label="Visitar nuestro perfil en Facebook"/>
+        <h2>Eldorado Misiones</h2>
     </header>
   );
   }

@@ -92,7 +92,37 @@ export const bandeja = [
         image:'69.png' ,
         stock: 99,
         titulo:"Bandeja"
-    }
+    },    {
+        id:173,
+        categoria:"bandeja",
+        medida:[            
+            {nombre:"28cm x 19cm ", precio:940 }
+    ],
+        image:'158.png', 
+        stock: 99,
+        titulo:"Bandeja"
+    }, 
+    {
+        id:174,
+        categoria:"bandeja",
+        medida:[            
+            {nombre:"22cm x 15cm ", precio:940 },
+            {nombre:"32cm x 15cm ", precio:1250 }
+    ],
+        image:'159.png', 
+        stock: 99,
+        titulo:"Bandeja"
+    }, 
+    {
+        id:175,
+        categoria:"bandeja",
+        medida:[            
+            {nombre:"35cm x 26cm ", precio:1630 },
+    ],
+        image:'160.png', 
+        stock: 99,
+        titulo:"Bandeja"
+    }, 
   
     ]
     export const navidad=[
@@ -113,6 +143,17 @@ export const bandeja = [
                 {nombre:"37cm de alto ", precio:800 },
             ],    
             image:'94.png',
+            stock: 99,
+            titulo:"Arbolito"
+        },
+        {
+            id:171,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"60cm de alto", precio:2380 },
+                {nombre:"70cm de alto", precio:2500 }
+            ],    
+            image:'155.png',
             stock: 99,
             titulo:"Arbolito"
         },
@@ -492,6 +533,67 @@ export const bandeja = [
             stock: 99,
             titulo:"Aplique"
         },
+        {
+            id:162,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"6cm de largo", precio:190 }
+            ],    
+            image:'147.png',
+            stock: 99,
+            titulo:"Palabas"
+        },  
+    
+        {
+            id:163,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"17cm de largo", precio:300 }
+            ],    
+            image:'148.png',
+            stock: 99,
+            titulo:"Palabas"
+        },  
+        {
+            id:164,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"23cm de largo", precio:560 }
+            ],    
+            image:'146.png',
+            stock: 99,
+            titulo:"Palabas"
+        },  
+        {
+            id:165,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"17cm de largo", precio:300 }
+            ],    
+            image:'149.png',
+            stock: 99,
+            titulo:"Palabas"
+        },  
+        {
+            id:166,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"11cm de largo", precio:300 }
+            ],    
+            image:'150.png',
+            stock: 99,
+            titulo:"Palabas"
+        },  
+        {
+            id:167,
+            categoria:"navidad",
+            medida:[            
+                {nombre:"26cm de largo", precio:380 }
+            ],    
+            image:'151.png',
+            stock: 99,
+            titulo:"Palabas"
+        }
     ]
 
     export const portaretrato = [
@@ -806,16 +908,29 @@ export const bandeja = [
             {
                 id:40,
                 categoria:"servilletero",
-                medida:[            {nombre:"12cm alto", precio:800 },      ],
+                medida:[           
+                       {nombre:"7cm alto", precio:550 },      
+                    ],
                image:'48.png' ,
                 stock: 99,
                 titulo:"Servilletero"
             },
             {
+                id:176,
+                categoria:"posa_torta",
+                medida:[            
+                    {nombre:"27cm de diametro ", precio:2650 },
+                    {nombre:"29cm de diametro ", precio:3380 }
+            ],
+                image:'165.png', 
+                stock: 99,
+                titulo:"Posa torta"
+            }, 
+            {
                 id:41,
                 categoria:"servilletero",
-                medida:[            {nombre:"9cm de alto", precio:300 },
-                    {nombre:"12cm de alto", precio:750 }
+                medida:[         
+                       {nombre:"7cm de alto", precio:650 },
                 ],
                 image:'47.png' ,
                 stock: 99,
@@ -824,8 +939,9 @@ export const bandeja = [
             {
                 id:43,
                 categoria:"servilletero",
-                medida:[            {nombre:"9cm alto",  precio:300 },
-                    {nombre:"12cm alto", precio:75 },
+                medida:[  
+                        {nombre:"7cm alto",  precio:550 },
+                  
              ],
                 image:'46.png' , 
                 stock: 99,
@@ -841,6 +957,27 @@ export const bandeja = [
                 stock: 99,
                 titulo:"Porta aderezo"
             },
+            {
+                id:168,
+                categoria:"porta_vino",
+                medida:[            
+                    {nombre:"32cm de alto", precio:1560 }
+                ],    
+                image:'152.png',
+                stock: 99,
+                titulo:"Porta cerveza"
+            },  
+            {
+                id:169,
+                categoria:"porta_vino",
+                medida:[            
+                    {nombre:"37cm de alto", precio:1380 }
+                ],    
+                image:'153.png',
+                stock: 99,
+                titulo:"Porta vino"
+            }
+
 
         ]
 
@@ -955,6 +1092,17 @@ export const bandeja = [
                 stock: 99,
                 titulo:"Plantera"
             },
+            {
+                id:177,
+                categoria:"torre",
+                medida:[            
+                    {nombre:"26cm de alto", precio:750 },
+                    {nombre:"40cm de alto", precio:1500 }
+            ],
+                image:'157.png', 
+                stock: 99,
+                titulo:"Torre Eiffel"
+            }
            
 
         ]
@@ -980,13 +1128,22 @@ export const bandeja = [
                 stock: 99,
                 titulo:"Porta celular"
             },
-          
+            {
+                id:161,
+                categoria:"porta_celular",
+                medida:[
+                    {nombre:"16cm de alto", precio:800 }
+                ],
+                image:'145.png' ,
+                stock: 99,
+                titulo:"Porta celular"
+            }, 
             {
                 id:100,
                 categoria:"soporte",
                 medida:[
-                    {nombre:"8cm de alto", precio:190 },
-                    {nombre:"11cm de alto", precio:300 },
+                    {nombre:"7cm de alto", precio:190 },
+                    {nombre:"10cm de alto", precio:300 },
                     {nombre:"20cm de alto", precio:630 }
                 ],
                 image:'61.png' ,
@@ -1172,6 +1329,28 @@ export const bandeja = [
                 titulo:"casita de pajaritos"
             },
             {
+                id:178,
+                categoria:"fanales",
+                medida:[            
+                    {nombre:"32cm de alto", precio:2250 },
+                    {nombre:"36cm de alto", precio:2950 },
+                    {nombre:"41cm de alto", precio:3750 }
+            ],
+                image:'166.png', 
+                stock: 99,
+                titulo:"Fanales"
+            }, 
+            {
+                id:172,
+                categoria:"casita",
+                medida:[
+                    {nombre:"30cm x 18cm", precio:1900 }
+                ],
+                image:'156.png' ,
+                stock: 99,
+                titulo:"casita"
+            },
+            {
                 id:80,
                 categoria:"bastidores",
                 medida:[
@@ -1342,6 +1521,17 @@ export const bandeja = [
               image:'87.png' ,
                 stock: 99,
                 titulo:"Círculo melamina 3mm"
+            },
+            {
+                id:170,
+                categoria:"circulo_mdf",
+                medida:[            
+                    {nombre:"16cm x 14cm", precio:900 },
+                    {nombre:"37cm x 32cm", precio:1600 }
+                ],    
+                image:'154.png',
+                stock: 99,
+                titulo:"Exágono"
             }
 
         ]
@@ -1467,6 +1657,100 @@ export const portaRollo=[
         image:'92.png' ,
         stock: 99,
         titulo:"Porta rollo"
-    }
+    },
+    {
+        id:158,
+        categoria:"porta_rollo",
+        medida:[
+            {nombre:"35cm de alto", precio:1100 }
+        ],
+        image:'142.png' ,
+        stock: 99,
+        titulo:"Porta rollo"
+    },     
+    {
+        id:159,
+        categoria:"porta_rollo",
+        medida:[
+            {nombre:"35cm de alto", precio:1100 }
+        ],
+        image:'143.png' ,
+        stock: 99,
+        titulo:"Porta rollo"
+    },  
+    {
+        id:160,
+        categoria:"porta_rollo",
+        medida:[
+            {nombre:"35cm de alto", precio:1100 }
+        ],
+        image:'144.png' ,
+        stock: 99,
+        titulo:"Porta rollo"
+    }     
 
+]
+export const mates=[
+    {
+        id:179,
+        categoria:"mates",
+        medida:[            
+            {nombre:"9cm de alto", precio:1000 },
+    ],
+        image:'167.png', 
+        stock: 99,
+        titulo:"Mate de argarrobo"
+    }, 
+    {
+        id:180,
+        categoria:"mates",
+        medida:[            
+            {nombre:"8,5cm de alto", precio:1400 },
+    ],
+        image:'168.png', 
+        stock: 99,
+        titulo:"Mate de madera cadén"
+    }, 
+    {
+        id:181,
+        categoria:"mates",
+        medida:[            
+            {nombre:"9cm de alto", precio:850 }
+    ],
+        image:'169.png', 
+        stock: 99,
+        titulo:"Mate de madera cadén"
+    },
+    {
+        id:181,
+        categoria:"mates",
+        medida:[            
+            {nombre:"9cm de alto", precio:850 }
+    ],
+        image:'170.png', 
+        stock: 99,
+        titulo:"Mate de madera cadén  "
+    }, 
+    {
+        id:182,
+        categoria:"mates",
+        medida:[            
+            {nombre:"10cm de alto", precio:850 }
+    ],
+        image:'172.png', 
+        stock: 99,
+        titulo:"Mate de madera cadén  "
+    }, 
+    {
+        id:183,
+        categoria:"mates",
+        medida:[            
+            {nombre:"8cm de diámetro", precio:750 }, 
+            {nombre:"10cm de diámetro", precio:850 },
+            {nombre:"12cm de diámetro", precio:950 }
+    ],
+        image:'171.png', 
+        stock: 99,
+        titulo:"Cuencos  "
+    }, 
 ]

@@ -168,7 +168,7 @@ position: static;
 .cantidad{
   width: 100px;
   }
- 
+
 
 @media screen and (max-width:767px){
   .icono-carrito{
@@ -210,7 +210,9 @@ position: static;
     }
   }
   .App{
+    
     .inicio{
+     
           animation-name: mianimacion;
     animation-duration: 5s; 
   @keyframes mianimacion {
@@ -292,7 +294,7 @@ position: static;
   .App{
     .inicio{
       margin-left: 0;
-      width: 85%;
+      width: 91%;
       h3{
         font-size: 1.4rem; 
       }
@@ -309,7 +311,7 @@ position: static;
   }
     
 }
-@media screen and (max-width:400px){
+@media(max-width:400px){
   .pagar-todo{
   .wpp{
     margin-left: 13%;

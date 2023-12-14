@@ -2,7 +2,7 @@ import CarouselInicio from "../componentes/CarouselInicio/CarouselInicio";
 import Consultar from "../componentes/Consultar/Consultar";
 import Carusel from "../componentes/carusel/Carusel";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
+import './Home.scss'
 
 const Home = ()=>{
 
@@ -16,7 +16,7 @@ const Home = ()=>{
 
 
     return(
-       <>
+       <div className="home">
         <div className="App">
         <div className='inicio'>
         <h3>● Compra mínima $10.000 .</h3>
@@ -30,7 +30,7 @@ const Home = ()=>{
         <Carusel/>
         <Consultar/>
        
-        </>
+        </div>
     );
 }
 

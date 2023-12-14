@@ -1,37 +1,28 @@
-.top{
-    margin-left:102%;
-   
+.top2{
+    margin-left:96.6%;
     position: -webkit-sticky; 
     position: sticky; 
     top:400px;
     background-color: transparent;
     border: none;
     color: rgba(59, 57, 57, 0.841);
+   
     
-    .topIcon{
+    .topIcon2{
         border-radius: 10px;
         font-size: 1.7rem;
         background-color: transparent;
         box-shadow: 1px 2px 2px 1px rgba(67, 66, 66, 0.25);
      }
     }
-    
-    @media (max-width:920px){
-        .top{
-          margin-left: 100.8%;
+     @media (max-width:748px){
+        .top2{
+            margin-left: 95%;
         }
-    }
-    @media (max-width:768px){
-        .top{
-          margin-left: 98%;
-        }
-    }
-    @media (max-width:470px){
-        .top{
-          margin-left: 99%;
+     }
+     @media (max-width:476px){
+        .top2{
+            margin-left: 87%;
         
-        .topIcon{
-            font-size: 1.6rem;
         }
-    }
-    }
+     }

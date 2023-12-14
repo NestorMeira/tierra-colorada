@@ -19,18 +19,6 @@ function Footer() {
         <span className="logo-text">Artesanias Tierra Colorada</span>
         <span className="logo-text">Eldorado-Misiones</span>
       </div>
-      {/* <div className="creator">
-        Creado por{' '}
-        <a
-          href="enlace_a_tu_portfolio"
-          className="portfolio-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            Nestor Meira
-        </a>
-      </div> */}
-
        <div className='redes'>
          <a
            href="https://www.instagram.com/artesania_tierracolorada/"
@@ -44,6 +32,19 @@ function Footer() {
          
          <a href='https://www.facebook.com/profile.php?id=61552627533704&mibextid=ZbWKwL'><FacebookIcon className="icono-redes" /></a>
        </div>
+
+       <div className="creator">
+        Creado por:{' '}
+        <a
+          href="https://nestormeira.github.io/porfolio/"
+          className="portfolio-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+            Nestor Meira
+        </a>
+      </div>
+
     </footer>
   );
 }

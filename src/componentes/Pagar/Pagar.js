@@ -74,7 +74,7 @@ const Pagar = () => {
       // Mostrar un SweetAlert2 para indicar que la compra mínima es de 10000
       Swal.fire({
         title: 'Compra mínima no alcanzada',
-        text: 'La compra mínima es de 10000.',
+        text: 'La compra mínima es de $10.000',
         icon: 'error',
       });
     }

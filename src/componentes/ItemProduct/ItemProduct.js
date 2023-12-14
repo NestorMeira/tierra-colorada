@@ -8,14 +8,18 @@ import './ItemProduct.scss'
 const ItemProduct = ({ data }) => {
   const { titulo, image, precio, id, medida } = data;
   const { addRemera } = useContext(CartContext);
+  
+  const precioInicial = medida[0].precio * 1.2;
+
   const [selectedMedida, setSelectedMedida] = useState(medida[0].nombre);
-  const [selectedPrecio, setSelectedPrecio] = useState(medida[0].precio);
+  const [selectedPrecio, setSelectedPrecio] = useState(precioInicial);
 
   const onMedidaChange = (newMedida) => {
     const selectedMedidaData = medida.find((item) => item.nombre === newMedida);
+    const nuevoPrecio = selectedMedidaData.precio * 1.2; // Aumentar el precio en un 20%
+    
     setSelectedMedida(newMedida);
-    setSelectedPrecio(selectedMedidaData.precio);
-  
+    setSelectedPrecio(nuevoPrecio);
   };
 
   const onAdd = (contador) => {

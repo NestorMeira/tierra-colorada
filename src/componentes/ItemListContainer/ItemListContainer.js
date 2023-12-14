@@ -3,6 +3,8 @@ import React ,{ useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import KeyboardDoubleArrowUpOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowUpOutlined';
 import products2 from '../utils/Mdf';
+import './ItemListContainer.scss'
+
 
 const ItemListContainer = ()=>{
 
@@ -51,7 +53,7 @@ const scrollToTop = () => {
         <>
 
         <div className="lista-productos">
-        <button className='top' onClick={scrollToTop}><KeyboardDoubleArrowUpOutlinedIcon className='topIcon'/></button> 
+        <button className='top2' onClick={scrollToTop}><KeyboardDoubleArrowUpOutlinedIcon className='topIcon2'/></button> 
             <ItemList dataProducts={listProducts}/>
         </div>
 

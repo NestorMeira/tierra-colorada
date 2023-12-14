@@ -53,7 +53,10 @@ header{
         &:hover{
           color: aliceblue;
         }}
-     
+        h2{
+          text-shadow: 0.5px 0.5px 0.8px rgba(38, 38, 38, 0.371);
+        }
+  
 }
 
 @media (max-width:490px){
@@ -61,16 +64,17 @@ header{
     img{
       width: 100%;
     }
+    h2{
+      font-size: 1.1rem;
+    }
     .redes{
       a{
         font-size: 0.7rem;
-     padding-left: 1rem;
-     margin-right: 3%;
+ 
        font-weight: normal;
       .icono-redes{
         font-size: 1.5rem;
-        padding-right: 2rem;
-        margin-right: -14%;
+     
       }
     }
     }

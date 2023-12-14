@@ -1,11 +1,32 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
-  const [cartPro, setCartPro] = useState([]);
+  // Utilizamos una función de inicialización para obtener el valor del sessionStorage
+  const [cartPro, setCartPro] = useState(() => {
+    const storedCart = sessionStorage.getItem('cart');
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
   const [totalPro, setTotalPro] = useState(0);
   const [totalPrecio, setTotalPrecio] = useState(0);
+
+  // ... (resto del código)
+
+  useEffect(() => {
+    const saveCartToSessionStorage = () => {
+      sessionStorage.setItem('cart', JSON.stringify(cartPro));
+    };
+
+    saveCartToSessionStorage();
+
+    window.addEventListener('beforeunload', saveCartToSessionStorage);
+
+    return () => {
+      window.removeEventListener('beforeunload', saveCartToSessionStorage);
+    };
+  }, [cartPro]);
 
   const getRemeraId = (id, medida) => cartPro.find((e) => e.id === id && e.medida === medida) || null;
 
