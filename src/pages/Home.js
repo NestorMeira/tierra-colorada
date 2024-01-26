@@ -18,6 +18,7 @@ const Home = ()=>{
     return(
        <div className="home">
         <div className="App">
+            <h1>Eestamos actualizando todos los precios.<br></br>Podes consultar al whatsapp</h1>
         <div className='inicio'>
         <h3>● Compra mínima $10.000 .</h3>
         <h3>● Envíos a todo Misiones.</h3>

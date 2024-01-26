@@ -68,10 +68,10 @@ const Pagar = () => {
     
   const handleCompra = () => {
     if (totalCompra >= 10000) {
-      // El total de la compra es igual o mayor a 10000, permitir la compra
+  
       setShowModal(true);
     } else {
-      // Mostrar un SweetAlert2 para indicar que la compra mínima es de 10000
+
       Swal.fire({
         title: 'Compra mínima no alcanzada',
         text: 'La compra mínima es de $10.000',

@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="categorias">
 
           <select className='linea' value={selectedCategory} onChange={handleCategoryChange}>
-            <option  value="/">Productos</option>
+            <option disabled  value="/">Productos</option>
             <option value="/categoria/cajitas">Cajitas</option>
             <option value="/categoria/caja_con_tapa">Cajas con tapa</option>
             <option value="/categoria/portaretrato">Portaretratos</option>
@@ -70,6 +70,9 @@ const Navbar = () => {
             <option value="/categoria/mates">mates</option>
           </select>
       </div>
+      <Link to="/nosotros" className='linea'>
+        <button className='btn-nosotros'>Nosotros</button>
+        </Link>
       <CartWidget />
     </nav>
   );
