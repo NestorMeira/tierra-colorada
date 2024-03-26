@@ -18,15 +18,14 @@ const Home = ()=>{
     return(
        <div className="home">
         <div className="App">
-            <h1>Eestamos actualizando todos los precios.<br></br>Podes consultar al whatsapp</h1>
-        <div className='inicio'>
-        <h3>● Compra mínima $10.000 .</h3>
-        <h3>● Envíos a todo Misiones.</h3>
-        <h3>● Pagos por: transferencia,<br/> contrareembolso o mercadopago.</h3>
-        <h3>● Envíos con Neo o Más.</h3>
-        <button className='wpp' onClick={sendWhatsAppMessage}>WhatsApp   <WhatsAppIcon className='icom-wpp'/></button>
-        </div>
+        <div className="compra">
+             <img src="assets/compra.jpg" alt="imagen" />
+          </div>
+           <h2>Consultar precios por whatsapp</h2>
+            <button className='wpp' onClick={sendWhatsAppMessage}>WhatsApp   <WhatsAppIcon className='icom-wpp'/></button>
+
          </div>
+         
          <CarouselInicio/>
         <Carusel/>
         <Consultar/>

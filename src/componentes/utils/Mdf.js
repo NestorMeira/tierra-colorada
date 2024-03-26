@@ -1724,14 +1724,19 @@ const products2= [
     ],
         image:'171.png', 
         stock: 99,
-        titulo:"Cuencos  "
+        titulo:"Cuencos"
     }, 
      
      
     
 
 
+
+    
                              
 ]
+
+
+
 
 export default products2

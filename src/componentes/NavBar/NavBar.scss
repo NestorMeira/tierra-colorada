@@ -3,7 +3,7 @@
     flex-flow: row;
     margin-bottom: 3%;
     padding-top: 2.5rem;
-    background-color: #fffffff1;
+    background-color: #ffffff;
     position: -webkit-sticky; 
     position: sticky; 
     top: 0px; 
@@ -12,58 +12,59 @@
     
 }
 .categorias{
-  
+  cursor: pointer;
    text-align: center;
    border-radius: 3px;
-   margin-left:35%;
+   margin-left:37%;
    position: relative;
    select{
+    font-weight: 600;
     color:#DD1700;
-    font-size:1.4rem;
+    font-size:1.2rem;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.139);
     border: none;
     background: transparent;
-    border-bottom: 1px solid #DD1700;
+    cursor: pointer;
     transition: all .6s  ;
  
     
     &:hover{
-        font-size: 1.5rem;
+     color:#ff5947;;
        }
    }
   
 }
 .inicio{
     color:#DD1700;
-    font-size:1.5rem;
+    font-size:1.2rem;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.139);
     border: none;
     background: transparent;
-    border-bottom: 1px solid #DD1700;
-   margin-left: 25%; 
+    cursor: pointer;
+   margin-left: 26%; 
    position: absolute;
    transition: all .6s  ;
    &:hover{
-    font-size: 1.6rem;
+    color:#ff5947;;
    }
 }
 .btn-nosotros{
     color:#DD1700;
-    font-size:1.5rem;
+    font-size:1.2rem;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.139);
     border: none;
     background: transparent;
-    border-bottom: 1px solid #DD1700;
-    margin-left: 13%;
+    cursor: pointer;
+    margin-left: 20%;
     transition: all .6s  ;
     &:hover{
-     font-size: 1.6rem;
+        color:#ff5947;;
     }
 }
 
 @media (max-width:700px){
    .nav-superior{
-
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.25);
     .inicio{
         margin-left: 16%;
     }
@@ -78,12 +79,19 @@
 
   @media (max-width:550px){
     .nav-superior{
+  
         .categorias{
             margin-left: 19%;
+            select{
+                font-size: 1rem;
+            }
         }
      .inicio{
          margin-left: 5%;
-         
+         font-size: 1rem;
+     }
+     .btn-nosotros{
+        font-size: 1rem;
      }
  }
     
@@ -91,13 +99,13 @@
    @media (max-width:419px){
     .nav-superior{
        
-    background-color: #ffffffd8;
+  
         .categorias{
-            margin-left: 22%;
+            margin-left: 20%;
          
         }
      .inicio{
-         margin-left: 5%;
+         margin-left: 3%;
      }
  }
     

@@ -34,12 +34,12 @@ const Navbar = () => {
   return (
     <nav className='nav-superior'>
       <Link to="/" className='linea'>
-        <button className='inicio' onClick={inicioo}>Inicio</button>
+        <button className='inicio' onClick={inicioo}><b>INICIO</b></button>
         </Link>
       <div className="categorias">
 
           <select className='linea' value={selectedCategory} onChange={handleCategoryChange}>
-            <option disabled  value="/">Productos</option>
+            <option disabled  value="/"><b>PRODUCTOS</b></option>
             <option value="/categoria/cajitas">Cajitas</option>
             <option value="/categoria/caja_con_tapa">Cajas con tapa</option>
             <option value="/categoria/portaretrato">Portaretratos</option>
@@ -71,7 +71,7 @@ const Navbar = () => {
           </select>
       </div>
       <Link to="/nosotros" className='linea'>
-        <button className='btn-nosotros'>Nosotros</button>
+        <button className='btn-nosotros'><b>NOSOTROS</b></button>
         </Link>
       <CartWidget />
     </nav>

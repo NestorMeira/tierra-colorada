@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+
 import './Consultar.scss';
 
 const Consultar = () => {
@@ -67,7 +67,7 @@ const Consultar = () => {
                 ))}
               </select>
             </div>
-            <p><ArrowDownwardIcon className='flecha'/>Consultas por whatsapp<ArrowDownwardIcon className='flecha'/></p>
+            <p>Consultas por whatsapp</p>
             <button className='wpp' onClick={() => sendWhatsAppMessage()}>WhatsApp  <WhatsAppIcon className='icom-wpp'/></button>
           </div>
         </div>
